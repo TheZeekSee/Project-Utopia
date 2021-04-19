@@ -19,7 +19,7 @@
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/rank/security
-	name = "security officer's jumpsuit"
+	name = "Police officer's jumpsuit"
 	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection."
 	icon_state = "security"
 	item_state = "r_suit"
@@ -29,13 +29,13 @@
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/rank/security/skirt
-	name = "security officer's jumpskirt"
+	name = "Police officer's jumpskirt"
 	icon_state = "skirt_security"
 	item_color = "secskirtred"
 
 /obj/item/clothing/under/rank/dispatch
 	name = "dispatcher's uniform"
-	desc = "A dress shirt and khakis with a security patch sewn on."
+	desc = "A dress shirt and khakis with a police patch sewn on."
 	icon_state = "dispatch"
 	item_state = "dispatch"
 	item_color = "dispatch"
@@ -44,7 +44,7 @@
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/under/rank/security2
-	name = "security officer's uniform"
+	name = "Police officer's uniform"
 	desc = "It's made of a slightly sturdier material, to allow for robust protection."
 	icon_state = "redshirt2"
 	item_state = "r_suit"
@@ -126,8 +126,8 @@
  * Head of Security
  */
 /obj/item/clothing/under/rank/head_of_security
-	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Head of Security\". It has additional armor to protect the wearer."
-	name = "head of security's jumpsuit"
+	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Head of Police of Utopia\". It has additional armor to protect the wearer."
+	name = "head of Police of Utopia jumpsuit"
 	icon_state = "hos"
 	item_state = "r_suit"
 	item_color = "hosred"
@@ -136,7 +136,7 @@
 	siemens_coefficient = 0.8
 
 /obj/item/clothing/under/rank/head_of_security/turtleneck
-	name = "head of security's turtleneck"
+	name = "head of Police of Utopia turtleneck"
 	icon_state = "hos_turtleneck"
 	item_color = "hos_turtleneck"
 	item_state = "hos_turtleneck"
@@ -151,7 +151,7 @@
 //Jensen cosplay gear
 /obj/item/clothing/under/rank/head_of_security/jensen
 	desc = "You never asked for anything that stylish."
-	name = "head of security's jumpsuit"
+	name = "head of Police of Utopia jumpsuit"
 	icon_state = "jensen"
 	item_state = "jensen"
 	item_color = "jensen"

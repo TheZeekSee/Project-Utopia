@@ -77,7 +77,7 @@ Made by Xhuis
 	votable = 0
 
 	restricted_jobs = list("AI", "Cyborg")
-	protected_jobs = list("Security Cadet", "Security Officer", "Warden", "Detective", "Head of Security", "Captain")
+	protected_jobs = list("Police Cadet", "Police Officer", "Warden", "Detective", "Head of Police of Utopia", "Captain")
 
 	restricted_species_flags = list(IS_SYNTHETIC)
 

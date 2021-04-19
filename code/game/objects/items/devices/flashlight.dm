@@ -104,7 +104,7 @@
 
 /obj/item/device/flashlight/seclite
 	name = "seclite"
-	desc = "A robust flashlight used by security."
+	desc = "A robust flashlight used by Police of Utopia."
 	icon_state = "seclite"
 	item_state = "seclite"
 	force = 7 // Not as good as a stun baton.

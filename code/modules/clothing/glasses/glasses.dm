@@ -241,7 +241,7 @@
 
 /obj/item/clothing/glasses/sunglasses/hud/sechud/tactical
 	name = "tactical HUD"
-	desc = "Flash-resistant goggles with inbuilt combat and security information."
+	desc = "Flash-resistant goggles with inbuilt combat and Police of Utopia information."
 	icon_state = "swatgoggles"
 
 /obj/item/clothing/glasses/thermal

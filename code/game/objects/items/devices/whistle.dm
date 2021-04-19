@@ -24,7 +24,7 @@
 			to_chat(user, "<span class='warning'>*BZZZZcuntZZZZT*</span>")
 	else
 		playsound(src, 'sound/voice/halt.ogg', VOL_EFFECTS_MASTER, null, FALSE)
-		audible_message("<span class='warning'>[user]'s [name] rasps, \"Halt! Security!\"</span>")
+		audible_message("<span class='warning'>[user]'s [name] rasps, \"Halt! Police of Utopia!\"</span>")
 	if(user)
 		var/list/halt_recipients = list()
 		for(var/mob/M in viewers(user, null))

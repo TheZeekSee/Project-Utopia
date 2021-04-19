@@ -1,6 +1,6 @@
 /obj/machinery/bot/secbot
 	name = "Securitron"
-	desc = "A little security robot.  He looks less than thrilled."
+	desc = "A little Police of Utopia robot.  He looks less than thrilled."
 	icon = 'icons/obj/aibots.dmi'
 	icon_state = "secbot0"
 	var/icon_state_arrest = "secbot-c"
@@ -95,7 +95,7 @@
 	var/dat
 
 	dat += text({"
-		<TT><B>Automatic Security Unit v1.3</B></TT><BR><BR>
+		<TT><B>Automatic Police of Utopia Unit v1.3</B></TT><BR><BR>
 		Status: []<BR>
 		Behaviour controls are [locked ? "locked" : "unlocked"]<BR>
 		Maintenance panel panel is [open ? "opened" : "closed"]"},
@@ -105,7 +105,7 @@
 	if(!locked || issilicon(user) || isobserver(user))
 		dat += text({"<BR>
 			Check for Weapon Authorization: []<BR>
-			Check Security Records: []<BR>
+			Check Police of Utopia Records: []<BR>
 			Operating Mode: []<BR>
 			Report Arrests: []<BR>
 			Auto Patrol: []"},

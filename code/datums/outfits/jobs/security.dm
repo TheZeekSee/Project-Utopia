@@ -1,6 +1,6 @@
 // HOS OUTFIT
 /datum/outfit/job/hos
-	name = OUTFIT_JOB_NAME("Head of Security")
+	name = OUTFIT_JOB_NAME("Head of Police of Utopia")
 
 	uniform = /obj/item/clothing/under/rank/head_of_security
 	uniform_f = /obj/item/clothing/under/rank/head_of_security_fem
@@ -57,7 +57,7 @@
 
 // OFFICER OUTFIT
 /datum/outfit/job/officer
-	name = OUTFIT_JOB_NAME("Security Officer")
+	name = OUTFIT_JOB_NAME("Police Officer")
 
 	uniform = /obj/item/clothing/under/rank/security
 	uniform_f = /obj/item/clothing/under/rank/security/skirt
@@ -88,7 +88,7 @@
 
 // CADET OUTFIT
 /datum/outfit/job/cadet
-	name = OUTFIT_JOB_NAME("Security Cadet")
+	name = OUTFIT_JOB_NAME("Police Cadet")
 
 	uniform = /obj/item/clothing/under/rank/cadet
 	uniform_f = /obj/item/clothing/under/rank/cadet/skirt

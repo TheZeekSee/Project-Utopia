@@ -294,7 +294,7 @@
 */
 
 /obj/machinery/door/airlock/highsecurity
-	name          = "high tech security airlock"
+	name          = "high tech Police of Utopia airlock"
 	icon          = 'icons/obj/doors/airlocks/highsec/highsec.dmi'
 	overlays_file = 'icons/obj/doors/airlocks/highsec/overlays.dmi'
 

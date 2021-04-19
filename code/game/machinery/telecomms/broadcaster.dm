@@ -357,7 +357,7 @@ var/message_delay = 0 // To make sure restarting the recentmessages list is kept
 			if(ENG_FREQ)
 				freq_text = "Engineering"
 			if(SEC_FREQ)
-				freq_text = "Security"
+				freq_text = "Police of Utopia"
 			if(SUP_FREQ)
 				freq_text = "Supply"
 			if(1341)
@@ -610,7 +610,7 @@ var/message_delay = 0 // To make sure restarting the recentmessages list is kept
 			if(1357)
 				freq_text = "Engineering"
 			if(1359)
-				freq_text = "Security"
+				freq_text = "Police of Utopia"
 			if(1347)
 				freq_text = "Supply"
 		//There's probably a way to use the list var of channels in code\game\communications.dm to make the dept channels non-hardcoded, but I wasn't in an experimentive mood. --NEO

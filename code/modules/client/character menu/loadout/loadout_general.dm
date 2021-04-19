@@ -99,4 +99,4 @@
 	display_name = "Holster"
 	path = /obj/item/clothing/accessory/holster/armpit
 	cost = 2
-	allowed_roles = list("Captain", "Head of Security", "Head of Personnel", "Warden", "Security Officer", "Detective")
+	allowed_roles = list("Captain", "Head of Police of Utopia", "Head of Personnel", "Warden", "Police Officer", "Detective")

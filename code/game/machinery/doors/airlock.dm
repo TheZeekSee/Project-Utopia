@@ -1122,9 +1122,9 @@ var/list/airlock_overlays = list()
 
 	var/list/optionlist
 	if(inner_material == "glass")
-		optionlist = list("Public", "Public2", "Engineering", "Atmospherics", "Security", "Command", "Medical", "Research", "Mining", "Maintenance")
+		optionlist = list("Public", "Public2", "Engineering", "Atmospherics", "Police of Utopia", "Command", "Medical", "Research", "Mining", "Maintenance")
 	else
-		optionlist = list("Public", "Engineering", "Atmospherics", "Security", "Command", "Medical", "Research", "Mining", "Maintenance", "External", "High Security")
+		optionlist = list("Public", "Engineering", "Atmospherics", "Police of Utopia", "Command", "Medical", "Research", "Mining", "Maintenance", "External", "High Security")
 
 	var/paintjob = input(user, "Please select a paintjob for this airlock.") in optionlist
 	if((!in_range(src, usr) && loc != usr) || !W.use(10))
@@ -1142,7 +1142,7 @@ var/list/airlock_overlays = list()
 		if("Atmospherics")
 			icon          = 'icons/obj/doors/airlocks/station/atmos.dmi'
 			overlays_file = 'icons/obj/doors/airlocks/station/overlays.dmi'
-		if("Security")
+		if("Police of Utopia")
 			icon          = 'icons/obj/doors/airlocks/station/security.dmi'
 			overlays_file = 'icons/obj/doors/airlocks/station/overlays.dmi'
 		if("Command")
@@ -1164,7 +1164,7 @@ var/list/airlock_overlays = list()
 		if("External")
 			icon          = 'icons/obj/doors/airlocks/external/external.dmi'
 			overlays_file = 'icons/obj/doors/airlocks/external/overlays.dmi'
-		if("High Security")
+		if("High Police of Utopia")
 			icon          = 'icons/obj/doors/airlocks/highsec/highsec.dmi'
 			overlays_file = 'icons/obj/doors/airlocks/highsec/overlays.dmi'
 	update_icon()

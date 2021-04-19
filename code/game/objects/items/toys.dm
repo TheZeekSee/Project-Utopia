@@ -701,7 +701,7 @@
 	toysay = "Giving out all access!"
 
 /obj/item/toy/figure/hos
-	name = "Head of Security action figure"
+	name = "Head of Police of Utopia action figure"
 	icon_state = "hos"
 	toysay = "Get the justice chamber ready, I think we got a joker here."
 
@@ -771,7 +771,7 @@
 	toysay = "Get that fucking disk!"
 
 /obj/item/toy/figure/secofficer
-	name = "Security Officer action figure"
+	name = "Police Officer action figure"
 	icon_state = "secofficer"
 	toysay = "I am the law!"
 
@@ -1225,8 +1225,8 @@ Owl & Griffin toys
 	icon_state = "poly_sky"
 
 /obj/item/toy/prize/poly/polysec
-	name = "toy security Poly"
-	desc = "Mini-Borg action figure! Limited edition! 9/11. Good old security Poly."
+	name = "toy police Poly"
+	desc = "Mini-Borg action figure! Limited edition! 9/11. Good old police Poly."
 	icon_state = "poly_sec"
 
 /obj/item/toy/prize/poly/polycompanion

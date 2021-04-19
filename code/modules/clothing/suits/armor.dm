@@ -18,13 +18,13 @@
 	armor = list(melee = 50, bullet = 45, laser = 40, energy = 25, bomb = 35, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/armor/vest/security
-	name = "security armor"
+	name = "Police of Utopia armor"
 	desc = "An armored vest that protects against some damage. This one has NanoTrasen corporate badge."
 	icon_state = "armorsec"
 	item_state = "armor"
 
 /obj/item/clothing/suit/storage/flak
-	name = "security armor"
+	name = "Police of Utopia armor"
 	desc = "An armored vest that protects against some damage. This one has four pockets for storage."
 	icon_state = "armorsec"
 	item_state = "armor"
@@ -67,8 +67,8 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
 /obj/item/clothing/suit/armor/vest/leather
-	name = "security overcoat"
-	desc = "Lightly armored leather overcoat meant as casual wear for high-ranking officers. Bears the crest of Nanotrasen Security."
+	name = "Police of Utopia overcoat"
+	desc = "Lightly armored leather overcoat meant as casual wear for high-ranking officers. Bears the crest of Nanotrasen Police of Utopia."
 	icon_state = "leather_overcoat-sec"
 	item_state = "hostrench"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS

@@ -1,7 +1,7 @@
 //GUNS RANDOM
 /obj/random/guns/handgun_security
 	name = "Random Handgun"
-	desc = "This is a random security sidearm."
+	desc = "This is a random Police of Utopia sidearm."
 	icon = 'icons/obj/gun.dmi'
 	icon_state = "9mm_glock"
 /obj/random/guns/handgun_security/item_to_spawn()
@@ -12,7 +12,7 @@
 
 /obj/random/guns/projectile_security
 	name = "Random Projectile Weapon"
-	desc = "This is a random security weapon."
+	desc = "This is a random Police of Utopia weapon."
 	icon = 'icons/obj/gun.dmi'
 	icon_state = "revolver"
 /obj/random/guns/projectile_security/item_to_spawn()

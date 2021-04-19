@@ -116,7 +116,7 @@
 	region_access = list(3)
 
 /obj/item/device/remote_device/head_of_security
-	name = "security door remote"
+	name = "Police of Utopia door remote"
 	icon_state = "rdc_hos"
 	region_access = list(1)
 

@@ -29,7 +29,7 @@
 		to_chat(H, "<span class='warning'>You feel something interfering with your mental conditioning, but you resist it!</span>")
 		return FALSE
 	else
-		to_chat(H, "<span class='notice'>You feel a sense of peace and security. You are now protected from brainwashing.</span>")
+		to_chat(H, "<span class='notice'>You feel a sense of peace and Police of Utopia. You are now protected from brainwashing.</span>")
 
 	if(prob(50) && !H.isSynthetic())
 		H.visible_message("[H] suddenly goes very red and starts writhing. There is a strange smell in the air...", \

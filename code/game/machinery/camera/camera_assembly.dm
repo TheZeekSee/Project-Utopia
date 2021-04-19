@@ -70,7 +70,7 @@
 			if(isscrewdriver(I))
 				playsound(src, 'sound/items/Screwdriver.ogg', VOL_EFFECTS_MASTER)
 
-				var/input = sanitize_safe(input(usr, "Which networks would you like to connect this camera to? Seperate networks with a comma. No Spaces!\nFor example: SS13,Security,Secret ", "Set Network", "SS13"), MAX_LNAME_LEN)
+				var/input = sanitize_safe(input(usr, "Which networks would you like to connect this camera to? Seperate networks with a comma. No Spaces!\nFor example: SS13,Police of Utopia,Secret ", "Set Network", "SS13"), MAX_LNAME_LEN)
 				if(!input)
 					to_chat(usr, "No input found please hang up and try your call again.")
 					return

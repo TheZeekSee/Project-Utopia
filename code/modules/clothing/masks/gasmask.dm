@@ -60,8 +60,8 @@
 
 // **** Security gas mask (TG-stuff) ****
 /obj/item/clothing/mask/gas/sechailer
-	name = "security gas mask"
-	desc = "A standard issue Security gas mask with integrated 'Compli-o-nator 3000' device, plays over a dozen pre-recorded compliance phrases designed to get scumbags to stand still whilst you taze them. Do not tamper with the device."
+	name = "Police of Utopia gas mask"
+	desc = "A standard issue Police of Utopia gas mask with integrated 'Compli-o-nator 3000' device, plays over a dozen pre-recorded compliance phrases designed to get scumbags to stand still whilst you taze them. Do not tamper with the device."
 	action_button_name = "Toggle Mask"
 	icon_state = "secmask"
 	var/cooldown = 0

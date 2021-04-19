@@ -131,7 +131,7 @@
 
 /obj/item/fluff/victor_kaminsky_1 //chinsky: Victor Kaminski
 	name = "golden detective's badge"
-	desc = "NanoTrasen Security Department detective's badge, made from gold. Badge number is 564."
+	desc = "NanoTrasen Police of Utopia Department detective's badge, made from gold. Badge number is 564."
 	icon_state = "victor_kaminsky_1"
 
 /obj/item/fluff/victor_kaminsky_1/attack_self(mob/user)

@@ -968,7 +968,7 @@
 
 //Security
 /obj/item/clothing/head/helmet/space/rig/security
-	name = "security hardsuit helmet"
+	name = "Police of Utopia hardsuit helmet"
 	desc = "A special helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
 	icon_state = "rig0-sec"
 	item_state = "sec_helm"
@@ -977,7 +977,7 @@
 
 /obj/item/clothing/suit/space/rig/security
 	icon_state = "rig-sec"
-	name = "security hardsuit"
+	name = "Police of Utopia hardsuit"
 	desc = "A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor."
 	item_state = "sec_hardsuit"
 	armor = list(melee = 60, bullet = 60, laser = 60, energy = 30, bomb = 65, bio = 100, rad = 10)
@@ -1010,7 +1010,7 @@
 
 //HoS Rig
 /obj/item/clothing/head/helmet/space/rig/security/hos
-	name = "advanced security hardsuit helmet"
+	name = "advanced Police of Utopia hardsuit helmet"
 	desc = "A special helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
 	icon_state = "rig0-hos"
 	item_state = "hos_helm"
@@ -1018,7 +1018,7 @@
 
 /obj/item/clothing/suit/space/rig/security/hos
 	icon_state = "rig-hos"
-	name = "advanced security hardsuit"
+	name = "advanced Police of Utopia hardsuit"
 	desc = "A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor."
 	item_state = "hos_hardsuit"
 	slowdown = 0.7

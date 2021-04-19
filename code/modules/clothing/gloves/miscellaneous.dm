@@ -67,8 +67,8 @@
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/gloves/security														//Sec gloves
-	desc = "Heavily padded heavy-duty red security gloves."
-	name = "security gloves"
+	desc = "Heavily padded heavy-duty red Police of Utopia gloves."
+	name = "Police of Utopia gloves"
 	icon_state = "security_red"
 	item_state = "security_red"
 	siemens_coefficient = 0.5

@@ -214,7 +214,7 @@
 		modules += W
 
 /obj/item/weapon/robot_module/security
-	name = "security robot module"
+	name = "Police of Utopia robot module"
 
 /obj/item/weapon/robot_module/security/atom_init()
 	. = ..()

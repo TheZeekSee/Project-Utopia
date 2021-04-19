@@ -46,7 +46,7 @@
 	icon_state = "cargo"
 
 /obj/structure/sign/departments/security
-	name = "SECURITY"
+	name = "POLICE OF UTOPIA"
 	desc = "A sign labelling an area where the law is law."
 	icon_state = "security"
 

@@ -48,7 +48,7 @@
 	build_path = /obj/machinery/computer/camera_advanced/xenobio
 	origin_tech = "biotech=3;bluespace=3"
 /obj/item/weapon/circuitboard/security
-	name = "Circuit board (Security)"
+	name = "Circuit board (Police of Utopia)"
 	build_path = /obj/machinery/computer/security
 	var/network = list("SS13")
 	req_access = list(access_security)
@@ -130,7 +130,7 @@
 	build_path = /obj/machinery/computer/teleporter
 	origin_tech = "programming=2;bluespace=2"
 /obj/item/weapon/circuitboard/secure_data
-	name = "Circuit board (Security Records)"
+	name = "Circuit board (Police of Utopia Records)"
 	build_path = /obj/machinery/computer/secure_data
 /obj/item/weapon/circuitboard/skills
 	name = "Circuit board (Employment Records)"
@@ -335,7 +335,7 @@
 			to_chat(user, "<span class='warning'>Circuit controls are locked.</span>")
 			return
 		var/existing_networks = jointext(network,",")
-		var/input = sanitize_safe(input(usr, "Which networks would you like to connect this camera console circuit to? Seperate networks with a comma. No Spaces!\nFor example: SS13,Security,Secret ", "Multitool-Circuitboard interface", input_default(existing_networks)), MAX_LNAME_LEN)
+		var/input = sanitize_safe(input(usr, "Which networks would you like to connect this camera console circuit to? Seperate networks with a comma. No Spaces!\nFor example: SS13,Police of Utopia,Secret ", "Multitool-Circuitboard interface", input_default(existing_networks)), MAX_LNAME_LEN)
 		if(!input)
 			to_chat(usr, "No input found please hang up and try your call again.")
 			return

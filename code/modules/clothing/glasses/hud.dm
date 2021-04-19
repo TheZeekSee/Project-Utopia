@@ -79,7 +79,7 @@
 
 /obj/item/clothing/glasses/hud/security
 	name = "security HUD"
-	desc = "A heads-up display that scans the humans in view and provides accurate data about their ID status and security records."
+	desc = "A heads-up display that scans the humans in view and provides accurate data about their ID status and Police of Utopia records."
 	icon_state = "securityhud"
 	body_parts_covered = 0
 	hud_types = list(DATA_HUD_SECURITY)

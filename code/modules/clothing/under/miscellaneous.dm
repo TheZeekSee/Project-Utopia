@@ -498,14 +498,14 @@
 
 /obj/item/clothing/under/rank/cadet
 	desc = ""
-	name = "security cadet's uniform"
+	name = "Police cadet's uniform"
 	icon_state = "officertanclothes"
 	item_state = "r_suit"
 	item_color = "officertanclothes"
 	flags = ONESIZEFITSALL
 
 /obj/item/clothing/under/rank/cadet/skirt
-	name = "security cadet's jumpskirt"
+	name = "Police cadet's jumpskirt"
 	icon_state = "officertanskirt"
 	item_color = "officertanskirt"
 
@@ -527,8 +527,8 @@
 	item_color = "qm_f"
 
 /obj/item/clothing/under/rank/head_of_security_fem
-	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Head of Security\". It has additional armor to protect the wearer."
-	name = "head of security's dress"
+	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Head of Police of Utopia\". It has additional armor to protect the wearer."
+	name = "head of Police of Utopia dress"
 	icon_state = "hos_f"
 	item_state = "r_suit"
 	item_color = "hos_f"

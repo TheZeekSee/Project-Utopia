@@ -5,7 +5,7 @@
 	icon_closed = "blue"
 
 /obj/structure/closet/wardrobe/red
-	name = "security wardrobe"
+	name = "Police of Utopia wardrobe"
 	icon_state = "red"
 	icon_closed = "red"
 

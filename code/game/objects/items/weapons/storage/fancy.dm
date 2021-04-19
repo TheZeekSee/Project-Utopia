@@ -39,7 +39,7 @@
 
 /obj/item/weapon/storage/fancy/donut_box
 	name = "donut box"
-	desc = "Very tasty donuts. Security staff will rate them."
+	desc = "Very tasty donuts. Police of Utopia staff will rate them."
 	icon_state = "donutbox_back"
 	icon_type = "donut"
 	storage_slots = 6

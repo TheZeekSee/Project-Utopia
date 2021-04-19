@@ -7,7 +7,7 @@
 #define DEFAULT_MAP_SIZE 15
 
 /obj/machinery/computer/security
-	name = "security camera monitor"
+	name = "Police of Utopia camera monitor"
 	desc = "Used to access the various cameras on the station."
 	icon_state = "cameras"
 	state_broken_preset = "securityb"
@@ -107,7 +107,7 @@
 		var/c_tag = params["name"]
 		var/list/cameras = get_cached_cameras()
 		var/obj/machinery/camera/selected_camera = cameras[c_tag]
-		
+
 		switch_to_camera(selected_camera)
 
 		return TRUE
@@ -222,7 +222,7 @@
 /obj/machinery/computer/security/proc/get_cached_cameras()
 	if (isnull(camera_cache))
 		camera_cache = get_available_cameras()
-	
+
 	return camera_cache
 
 /obj/machinery/computer/security/tgui_data()
@@ -298,7 +298,7 @@
 	light_color = "#ea4444"
 
 /obj/machinery/computer/security/wooden_tv
-	name = "security camera monitor"
+	name = "Police of Utopia camera monitor"
 	desc = "An old TV hooked into the stations camera network."
 	icon_state = "security_det"
 	state_broken_preset = null
@@ -306,7 +306,7 @@
 	light_color = "#3550b6"
 
 /obj/machinery/computer/security/wooden_tv/miami
-	name = "security camera monitor"
+	name = "Police of Utopia camera monitor"
 	desc = "An old TV hooked into the stations camera network."
 	icon_state = "security_det_miami"
 	state_broken_preset = null

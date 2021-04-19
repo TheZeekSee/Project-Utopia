@@ -1,6 +1,6 @@
 /obj/machinery/computer/secure_data//TODO:SANITY
-	name = "Security Records"
-	desc = "Used to view and edit personnel's security records."
+	name = "Police of Utopia Records"
+	desc = "Used to view and edit personnel's Police of Utopia records."
 	icon_state = "security"
 	light_color = "#a91515"
 	req_one_access = list(access_security, access_forensics_lockers)
@@ -98,7 +98,7 @@
 					dat += "<B>Records Maintenance</B><HR>"
 					dat += "<BR><A href='?src=\ref[src];choice=Delete All Records'>Delete All Records</A><BR><BR><A href='?src=\ref[src];choice=Return'>Back</A>"
 				if(3.0)
-					dat += "<CENTER><B>Security Record</B></CENTER><BR>"
+					dat += "<CENTER><B>Police of Utopia Record</B></CENTER><BR>"
 					if ((istype(active1, /datum/data/record) && data_core.general.Find(active1)))
 						if(istype(active1.fields["photo_f"], /icon))
 							var/icon/front = active1.fields["photo_f"]
@@ -125,16 +125,16 @@
 					else
 						dat += "<B>General Record Lost!</B><BR>"
 					if ((istype(active2, /datum/data/record) && data_core.security.Find(active2)))
-						dat += text("<BR>\n<CENTER><B>Security Data</B></CENTER><BR>\nCriminal Status: <A href='?src=\ref[];choice=Edit Field;field=criminal'>[]</A><BR>\n<BR>\nMinor Crimes: <A href='?src=\ref[];choice=Edit Field;field=mi_crim'>[]</A><BR>\nDetails: <A href='?src=\ref[];choice=Edit Field;field=mi_crim_d'>[]</A><BR>\n<BR>\nMajor Crimes: <A href='?src=\ref[];choice=Edit Field;field=ma_crim'>[]</A><BR>\nDetails: <A href='?src=\ref[];choice=Edit Field;field=ma_crim_d'>[]</A><BR>\n<BR>\nImportant Notes:<BR>\n\t<A href='?src=\ref[];choice=Edit Field;field=notes'>[]</A><BR>\n<BR>\n<CENTER><B>Comments/Log</B></CENTER><HR>", src, active2.fields["criminal"], src, active2.fields["mi_crim"], src, active2.fields["mi_crim_d"], src, active2.fields["ma_crim"], src, active2.fields["ma_crim_d"], src, decode(active2.fields["notes"]))
+						dat += text("<BR>\n<CENTER><B>Police of Utopia Data</B></CENTER><BR>\nCriminal Status: <A href='?src=\ref[];choice=Edit Field;field=criminal'>[]</A><BR>\n<BR>\nMinor Crimes: <A href='?src=\ref[];choice=Edit Field;field=mi_crim'>[]</A><BR>\nDetails: <A href='?src=\ref[];choice=Edit Field;field=mi_crim_d'>[]</A><BR>\n<BR>\nMajor Crimes: <A href='?src=\ref[];choice=Edit Field;field=ma_crim'>[]</A><BR>\nDetails: <A href='?src=\ref[];choice=Edit Field;field=ma_crim_d'>[]</A><BR>\n<BR>\nImportant Notes:<BR>\n\t<A href='?src=\ref[];choice=Edit Field;field=notes'>[]</A><BR>\n<BR>\n<CENTER><B>Comments/Log</B></CENTER><HR>", src, active2.fields["criminal"], src, active2.fields["mi_crim"], src, active2.fields["mi_crim_d"], src, active2.fields["ma_crim"], src, active2.fields["ma_crim_d"], src, decode(active2.fields["notes"]))
 						var/counter = 1
 						while(active2.fields[text("com_[]", counter)])
 							dat += text("[]<BR><A href='?src=\ref[];choice=Delete Entry;del_c=[]'>Delete Entry</A><HR>", active2.fields[text("com_[]", counter)], src, counter)
 							counter++
 						dat += text("<A href='?src=\ref[];choice=Add Entry'>Add Entry</A><BR>", src)
-						dat += text("<A href='?src=\ref[];choice=Delete Record (Security)'>Delete Record (Security Only)</A><BR>", src)
+						dat += text("<A href='?src=\ref[];choice=Delete Record (Police of Utopia)'>Delete Record (Police of Utopia Only)</A><BR>", src)
 					else
-						dat += "<B>Security Record Lost!</B><BR>"
-						dat += text("<A href='?src=\ref[];choice=New Record (Security)'>New Security Record</A><BR><BR>", src)
+						dat += "<B>Police of Utopia Record Lost!</B><BR>"
+						dat += text("<A href='?src=\ref[];choice=New Record (Police of Utopia)'>New Police of Utopia Record</A><BR><BR>", src)
 					dat += text("\n<A href='?src=\ref[];choice=Delete Record (ALL)'>Delete Record (ALL)</A><BR>\n<A href='?src=\ref[];choice=Print Record'>Print Record</A><BR>\n<A href='?src=\ref[];choice=Return'>Back</A><BR>", src, src, src)
 				if(4.0)
 					if(!Perp.len)
@@ -187,7 +187,7 @@
 		else
 			dat += text("<A href='?src=\ref[];choice=Log In'>Log In</A>", src)
 
-	var/datum/browser/popup = new(user, "secure_rec", "Security Records", 600, 400)
+	var/datum/browser/popup = new(user, "secure_rec", "Police of Utopia Records", 600, 400)
 	popup.set_content("<TT>[dat]</TT>")
 	popup.open()
 
@@ -335,21 +335,21 @@ What a mess.*/
 					record2 = active2
 				sleep(50)
 				var/obj/item/weapon/paper/P = new /obj/item/weapon/paper( loc )
-				P.info = "<CENTER><B>Security Record</B></CENTER><BR>"
+				P.info = "<CENTER><B>Police of Utopia Record</B></CENTER><BR>"
 				if (record1)
 					P.info += text("Name: [] ID: []<BR>\nSex: []<BR>\nAge: []<BR>\nFingerprint: []<BR>\nPhysical Status: []<BR>\nMental Status: []<BR>", record1.fields["name"], record1.fields["id"], record1.fields["sex"], record1.fields["age"], record1.fields["fingerprint"], record1.fields["p_stat"], record1.fields["m_stat"])
-					P.name = text("Security Record ([])", record1.fields["name"])
+					P.name = text("Police of Utopia Record ([])", record1.fields["name"])
 				else
 					P.info += "<B>General Record Lost!</B><BR>"
-					P.name = "Security Record"
+					P.name = "Police of Utopia Record"
 				if (record2)
-					P.info += text("<BR>\n<CENTER><B>Security Data</B></CENTER><BR>\nCriminal Status: []<BR>\n<BR>\nMinor Crimes: []<BR>\nDetails: []<BR>\n<BR>\nMajor Crimes: []<BR>\nDetails: []<BR>\n<BR>\nImportant Notes:<BR>\n\t[]<BR>\n<BR>\n<CENTER><B>Comments/Log</B></CENTER><BR>", record2.fields["criminal"], record2.fields["mi_crim"], record2.fields["mi_crim_d"], record2.fields["ma_crim"], record2.fields["ma_crim_d"], decode(record2.fields["notes"]))
+					P.info += text("<BR>\n<CENTER><B>Police of Utopia Data</B></CENTER><BR>\nCriminal Status: []<BR>\n<BR>\nMinor Crimes: []<BR>\nDetails: []<BR>\n<BR>\nMajor Crimes: []<BR>\nDetails: []<BR>\n<BR>\nImportant Notes:<BR>\n\t[]<BR>\n<BR>\n<CENTER><B>Comments/Log</B></CENTER><BR>", record2.fields["criminal"], record2.fields["mi_crim"], record2.fields["mi_crim_d"], record2.fields["ma_crim"], record2.fields["ma_crim_d"], decode(record2.fields["notes"]))
 					var/counter = 1
 					while(record2.fields[text("com_[]", counter)])
 						P.info += text("[]<BR>", record2.fields[text("com_[]", counter)])
 						counter++
 				else
-					P.info += "<B>Security Record Lost!</B><BR>"
+					P.info += "<B>Police of Utopia Record Lost!</B><BR>"
 				P.info += "</TT>"
 				P.update_icon()
 				printing = null
@@ -357,14 +357,14 @@ What a mess.*/
 //RECORD DELETE
 		if("Delete All Records")
 			temp = ""
-			temp += "Are you sure you wish to delete all Security records?<br>"
+			temp += "Are you sure you wish to delete all Police of Utopia records?<br>"
 			temp += "<a href='?src=\ref[src];choice=Purge All Records'>Yes</a><br>"
 			temp += "<a href='?src=\ref[src];choice=Clear Screen'>No</a>"
 
 		if("Purge All Records")
 			for(var/datum/data/record/R in data_core.security)
 				qdel(R)
-			temp = "All Security records deleted."
+			temp = "All Police of Utopia records deleted."
 
 		if("Add Entry")
 			if(!istype(active2, /datum/data/record))
@@ -384,17 +384,17 @@ What a mess.*/
 				temp += "<a href='?src=\ref[src];choice=Delete Record (ALL) Execute'>Yes</a><br>"
 				temp += "<a href='?src=\ref[src];choice=Clear Screen'>No</a>"
 
-		if("Delete Record (Security)")
+		if("Delete Record (Police of Utopia)")
 			if(active2)
-				temp = "<h5>Are you sure you wish to delete the record (Security Portion Only)?</h5>"
-				temp += "<a href='?src=\ref[src];choice=Delete Record (Security) Execute'>Yes</a><br>"
+				temp = "<h5>Are you sure you wish to delete the record (Police of Utopia Portion Only)?</h5>"
+				temp += "<a href='?src=\ref[src];choice=Delete Record (Police of Utopia) Execute'>Yes</a><br>"
 				temp += "<a href='?src=\ref[src];choice=Clear Screen'>No</a>"
 
 		if("Delete Entry")
 			if ((istype(active2, /datum/data/record) && active2.fields[text("com_[]", href_list["del_c"])]))
 				active2.fields[text("com_[]", href_list["del_c"])] = "<B>Deleted</B>"
 //RECORD CREATE
-		if("New Record (Security)")
+		if("New Record (Police of Utopia)")
 			if ((istype(active1, /datum/data/record) && !( istype(active2, /datum/data/record) )))
 				active2 = CreateSecurityRecord(active1.fields["name"], active1.fields["id"])
 				screen = 3
@@ -521,7 +521,7 @@ What a mess.*/
 						if(href_list["rank"] in joblist)
 							active1.fields["real_rank"] = href_list["real_rank"]
 
-				if ("Delete Record (Security) Execute")
+				if ("Delete Record (Police of Utopia) Execute")
 					if (active2)
 						qdel(active2)
 

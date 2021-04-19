@@ -70,7 +70,7 @@
 		if("Command") prefix = ":c "
 		if("Medical") prefix = ":m "
 		if("Engineering") prefix = ":e "
-		if("Security") prefix = ":s "
+		if("Police of Utopia") prefix = ":s "
 		if("Supply") prefix = ":u "
 		if("Binary") prefix = ":b "
 		if("Holopad") prefix = ":h "

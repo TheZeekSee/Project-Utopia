@@ -67,7 +67,7 @@
 /datum/gear/accessory/armband
 	display_name = "Armband selection"
 	path = /obj/item/clothing/accessory/armband
-	allowed_roles = list("Security Officer", "Security Cadet", "Warden", "Detective", "Head of Security", "Forensic Technician" )
+	allowed_roles = list("Police Officer", "Police Cadet", "Warden", "Detective", "Head of Police of Utopia", "Forensic Technician" )
 
 /datum/gear/accessory/armband/New()
 	..()

@@ -1,6 +1,6 @@
 /obj/item/clothing/shoes/boots
 	name = "jackboots"
-	desc = "Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time."
+	desc = "Nanotrasen-issue Police of Utopia combat boots for combat scenarios or combat situations. All combat, all the time."
 	icon_state = "wjboots"
 	item_state = "wjboots"
 	item_color = "hosred"

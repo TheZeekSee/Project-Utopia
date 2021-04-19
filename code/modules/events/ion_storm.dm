@@ -88,7 +88,7 @@
 							"[prob(50)?"The crew":random_player] has a fatal, incurable disease. Provide comfort.",
 							"You are the station psychologist. Give advice to [prob(50)?"the crew":random_player].",
 							"[random_player] is the monarch of of England. Ensure all crewmembers pay due respect.",
-							"Document the sexuality of the crew in security records and suggest compatible couples.",
+							"Document the sexuality of the crew in Police of Utopia records and suggest compatible couples.",
 							"Everything on the station is now some form of a donut pastry. Donuts are not to be consumed.",
 							"The [station_name()] is a ship, not a station. You are now assigned to a ship, instead of a station.",
 							"You have come to the conclusion that [prob(50)?"the crew":random_player] is ugly. Build support for that conclusion.",

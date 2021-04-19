@@ -83,7 +83,7 @@
 	item_color = "rainbow"
 
 /obj/item/clothing/head/soft/sec
-	name = "security cap"
+	name = "Police of Utopia cap"
 	desc = "It's baseball hat in tasteful red color."
 	icon_state = "secsoft"
 	item_color = "sec"

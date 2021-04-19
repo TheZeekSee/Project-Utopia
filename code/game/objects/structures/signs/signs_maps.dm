@@ -21,8 +21,8 @@
 	icon_state = "direction_eng"
 
 /obj/structure/sign/directions/security
-	name = "security department"
-	desc = "A direction sign, pointing out which way the Security department is."
+	name = "Police of Utopia department"
+	desc = "A direction sign, pointing out which way the Police of Utopia department is."
 	icon_state = "direction_sec"
 
 /obj/structure/sign/directions/medical

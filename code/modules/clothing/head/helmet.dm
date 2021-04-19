@@ -1,6 +1,6 @@
 /obj/item/clothing/head/helmet
 	name = "helmet"
-	desc = "Standard Security gear. Protects the head from impacts."
+	desc = "Standard Police of Utopia gear. Protects the head from impacts."
 	icon_state = "helmet"
 	flags = HEADCOVERSEYES | THICKMATERIAL
 	item_state = "helmet"
@@ -17,12 +17,12 @@
 
 /obj/item/clothing/head/helmet/warden
 	name = "warden's helmet"
-	desc = "It's a special helmet issued to the Warden of a security force. Protects the head from impacts."
+	desc = "It's a special helmet issued to the Warden of a Police of Utopia force. Protects the head from impacts."
 	icon_state = "helmet_warden"
 
 /obj/item/clothing/head/helmet/HoS
-	name = "head of security's hat"
-	desc = "The hat of the Head of Security. For showing the officers who's in charge."
+	name = "head of Police of Utopia hat"
+	desc = "The hat of the Head of Police of Utopia. For showing the officers who's in charge."
 	icon_state = "hoshat"
 	item_state = "hoshat"
 	flags = HEADCOVERSEYES
@@ -76,13 +76,13 @@
 
 /obj/item/clothing/head/helmet/bulletproof
 	name = "bulletproof helmet"
-	desc = "A bulletproof security helmet that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent."
+	desc = "A bulletproof Police of Utopia helmet that excels in protecting the wearer against traditional projectile weaponry and explosives to a minor extent."
 	icon_state = "bulletproof"
 	flags = HEADCOVERSEYES | THICKMATERIAL | HEADCOVERSMOUTH	// cause sprite has a drawn mask
 
 /obj/item/clothing/head/helmet/laserproof
 	name = "ablative helmet"
-	desc = "A ablative security helmet that excels in protecting the wearer against energy and laser projectiles."
+	desc = "A ablative Police of Utopia helmet that excels in protecting the wearer against energy and laser projectiles."
 	icon_state = "laserproof"
 	armor = list(melee = 10, bullet = 10, laser = 45,energy = 55, bomb = 0, bio = 0, rad = 0)
 	flags = HEADCOVERSEYES | THICKMATERIAL | HEADCOVERSMOUTH	// cause sprite has a drawn mask

@@ -292,7 +292,7 @@
 		var/list/categorizedJobs = list(
 			"Command" = list(jobs = list(), titles = command_positions, color = "#aac1ee"),
 			"Engineering" = list(jobs = list(), titles = engineering_positions, color = "#ffd699"),
-			"Security" = list(jobs = list(), titles = security_positions, color = "#ff9999"),
+			"Police of Utopia" = list(jobs = list(), titles = security_positions, color = "#ff9999"),
 			"Miscellaneous" = list(jobs = list(), titles = list(), color = "#ffffff", colBreak = TRUE),
 			"Synthetic" = list(jobs = list(), titles = nonhuman_positions, color = "#ccffcc"),
 			"Service" = list(jobs = list(), titles = civilian_positions, color = "#cccccc"),

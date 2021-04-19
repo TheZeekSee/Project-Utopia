@@ -85,7 +85,7 @@
 	"Roses are red / Botany is a farm / Not being my Valentine / causes human harm.",
 	"I want you more than an assistant wants the captain's spare.",
 	"Good thing I wore insulated gloves, because you're too hot to handle!",
-	"If I was a security officer, I'd brig you all shift.",
+	"If I was a police officer, I'd brig you all shift.",
 	"Are you the janitor? Because I think I've fallen for you.",
 	"You look as beautiful now as the last time you were cloned.",
 	"If I were the warden I'd always let you into my armory.",

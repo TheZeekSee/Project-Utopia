@@ -5,7 +5,7 @@
 //BIG NOTE: Don't add living things to crates, that's bad, it will break the shuttle.
 //NEW NOTE: Do NOT set the price of any crates below 7 points. Doing so allows infinite points.
 
-var/list/all_supply_groups = list("Operations","Security","Hospitality","Engineering","Medical / Science","Hydroponics","Mining","Supply","Miscellaneous")
+var/list/all_supply_groups = list("Operations","Police of Utopia","Hospitality","Engineering","Medical / Science","Hydroponics","Mining","Supply","Miscellaneous")
 
 /datum/supply_pack
 	var/name = "Crate"
@@ -334,14 +334,14 @@ var/list/all_supply_groups = list("Operations","Security","Hospitality","Enginee
 	group = "Security"
 
 /datum/supply_pack/securitybarriers
-	name = "Security barrier crate"
+	name = "Police of Utopia barrier crate"
 	contains = list(/obj/machinery/deployable/barrier,
 					/obj/machinery/deployable/barrier,
 					/obj/machinery/deployable/barrier,
 					/obj/machinery/deployable/barrier)
 	cost = 2000
 	crate_type = /obj/structure/closet/crate/secure/gear
-	crate_name = "Security barrier crate"
+	crate_name = "Police of Utopia barrier crate"
 	group = "Security"
 
 /datum/supply_pack/securitywallshield

@@ -131,7 +131,7 @@
 				<td>Check Weapon Authorization: </td><td>[]</td>
 			</tr>
 			<tr>
-				<td>Check Security Records: </td><td>[]</td>
+				<td>Check Police of Utopia Records: </td><td>[]</td>
 			</tr>
 			<tr>
 				<td>Check Arrest Status: </td><td>[]</td>

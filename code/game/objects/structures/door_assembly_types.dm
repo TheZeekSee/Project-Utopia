@@ -5,7 +5,7 @@
 	airlock_type = /obj/machinery/door/airlock/command
 
 /obj/structure/door_assembly/door_assembly_sec
-	name         = "security airlock assembly"
+	name         = "Police of Utopia airlock assembly"
 	icon         = 'icons/obj/doors/airlocks/station/security.dmi'
 	glass_type   = /obj/machinery/door/airlock/security/glass
 	airlock_type = /obj/machinery/door/airlock/security
@@ -91,7 +91,7 @@
 	can_insert_glass = FALSE
 
 /obj/structure/door_assembly/door_assembly_highsecurity
-	name             = "highsecurity airlock assembly"
+	name             = "high Police of Utopia airlock assembly"
 	icon             = 'icons/obj/doors/airlocks/highsec/highsec.dmi'
 	overlays_file    = 'icons/obj/doors/airlocks/highsec/overlays.dmi'
 	airlock_type     = /obj/machinery/door/airlock/highsecurity

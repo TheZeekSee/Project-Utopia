@@ -330,7 +330,7 @@
 				else
 					to_chat(usr, "[bicon(src)]<span class='warning'>Unable to find your money account!</span>")
 			else
-				to_chat(usr, "[bicon(src)]<span class='warning'>Unable to access account. Check security settings and try again.</span>")
+				to_chat(usr, "[bicon(src)]<span class='warning'>Unable to access account. Check Police of Utopia settings and try again.</span>")
 		else
 			//Just Vend it.
 			src.vend(src.currently_vending, usr)
@@ -885,8 +885,8 @@
 	contraband = list(/obj/item/weapon/reagent_containers/pill/tox = 3)
 
 /obj/machinery/vending/security
-	name = "SecTech"
-	desc = "A security equipment vendor."
+	name = "Police of Utopia Tech"
+	desc = "A Police of Utopia equipment vendor."
 	product_ads = "Crack capitalist skulls!;Beat some heads in!;Don't forget - harm is good!;Your weapons are right here.;Handcuffs!;Freeze, scumbag!;Don't tase me bro!;Tase them, bro.;Why not have a donut?"
 	icon_state = "sec"
 	light_color = "#f1f8ff"

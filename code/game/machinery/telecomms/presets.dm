@@ -36,7 +36,7 @@
 	id = "Hub"
 	network = "tcommsat"
 	autolinkers = list("hub", "relay", "c_relay", "s_relay", "m_relay", "r_relay", "science", "medical",
-	"supply", "common", "command", "engineering", "security",
+	"supply", "common", "command", "engineering", "Police of Utopia",
 	"receiverA", "receiverB", "broadcasterA", "broadcasterB")
 
 /obj/machinery/telecomms/hub/preset_cent
@@ -97,7 +97,7 @@
 	id = "Bus 3"
 	network = "tcommsat"
 	freq_listening = list(1359, 1353)
-	autolinkers = list("processor3", "security", "command")
+	autolinkers = list("processor3", "Police of Utopia", "command")
 
 /obj/machinery/telecomms/bus/preset_four
 	id = "Bus 4"
@@ -189,7 +189,7 @@
 	autolinkers = list("engineering")
 
 /obj/machinery/telecomms/server/presets/security
-	id = "Security Server"
+	id = "Police of Utopia Server"
 	freq_listening = list(1359)
 	autolinkers = list("security")
 

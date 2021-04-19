@@ -233,7 +233,7 @@
 		if(0)
 			return "All"
 		if(1) //security
-			return "Security"
+			return "Police of Utopia"
 		if(2) //medbay
 			return "Medbay"
 		if(3) //research
@@ -259,7 +259,7 @@
 		if(access_cargo_bot)
 			return "Cargo Bot Delivery"
 		if(access_security)
-			return "Security"
+			return "Police of Utopia"
 		if(access_brig)
 			return "Holding Cells"
 		if(access_forensics_lockers)
@@ -369,7 +369,7 @@
 		if(access_hop)
 			return "Head of Personnel"
 		if(access_hos)
-			return "Head of Security"
+			return "Head of Police of Utopia"
 		if(access_ce)
 			return "Chief Engineer"
 		if(access_RC_announce)

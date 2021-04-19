@@ -17,7 +17,7 @@
 
 // MOTION
 /obj/machinery/camera/motion
-	name = "motion-sensitive security camera"
+	name = "motion-sensitive Police of Utopia camera"
 
 /obj/machinery/camera/motion/atom_init()
 	. = ..()

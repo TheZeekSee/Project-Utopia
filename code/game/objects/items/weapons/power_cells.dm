@@ -46,7 +46,7 @@
 	charge = 0
 
 /obj/item/weapon/stock_parts/cell/secborg
-	name = "security borg rechargable D battery"
+	name = "Police of Utopia borg rechargable D battery"
 	origin_tech = "powerstorage=1"
 	maxcharge = 600	//600 max charge / 100 charge per shot = six shots
 	g_amt = 40

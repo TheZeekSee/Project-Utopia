@@ -1,5 +1,5 @@
 /datum/job/hos
-	title = "Head of Security"
+	title = "Head of Police of Utopia"
 	flag = HOS
 	department_flag = ENGSEC
 	faction = "Station"
@@ -36,7 +36,7 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of security"
+	supervisors = "the head of police of utopia"
 	selection_color = "#ffeeee"
 	idtype = /obj/item/weapon/card/id/sec
 	access = list(access_security, access_sec_doors, access_brig, access_armory, access_maint_tunnels)
@@ -61,7 +61,7 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of security"
+	supervisors = "the head of police of utopia"
 	selection_color = "#ffeeee"
 	idtype = /obj/item/weapon/card/id/sec
 	access = list(access_security, access_sec_doors, access_detective, access_maint_tunnels)
@@ -80,13 +80,13 @@
 
 
 /datum/job/officer
-	title = "Security Officer"
+	title = "Police Officer"
 	flag = OFFICER
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the head of security and warden"
+	supervisors = "the head of police of utopia and warden"
 	selection_color = "#ffeeee"
 	idtype = /obj/item/weapon/card/id/sec
 	access = list(access_security, access_sec_doors, access_brig, access_maint_tunnels)
@@ -111,7 +111,7 @@
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of security"
+	supervisors = "the head of police of utopia"
 	selection_color = "#ffeeee"
 	idtype = /obj/item/weapon/card/id/sec
 	access = list(access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels)
@@ -130,13 +130,13 @@
 
 
 /datum/job/cadet
-	title = "Security Cadet"
+	title = "Police Cadet"
 	flag = CADET
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the head of security"
+	supervisors = "the head of police of utopia"
 	selection_color = "#ffeeee"
 	idtype = /obj/item/weapon/card/id/sec
 	access = list(access_sec_doors, access_maint_tunnels)

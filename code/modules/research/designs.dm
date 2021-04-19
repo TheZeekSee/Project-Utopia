@@ -1820,7 +1820,7 @@ other types of metals and chemistry for reagents).
 
 /datum/design/stunrevolver
 	name = "Stun Revolver"
-	desc = "The prize of the Head of Security."
+	desc = "The prize of the Head of Police of Utopia."
 	id = "stunrevolver"
 	build_type = PROTOLATHE
 	materials = list(MAT_METAL = 4000)

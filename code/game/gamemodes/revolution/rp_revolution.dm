@@ -8,7 +8,7 @@
 	name = "rp-revolution"
 	config_tag = "rp-revolution"
 	role_type = ROLE_REV
-	restricted_jobs = list("Security Cadet", "Security Officer", "Warden", "Detective", "AI", "Cyborg","Captain", "Head of Personnel", "Head of Security", "Chief Engineer", "Research Director", "Chief Medical Officer", "Internal Affairs Agent")
+	restricted_jobs = list("Police Cadet", "Police Officer", "Warden", "Detective", "AI", "Cyborg","Captain", "Head of Personnel", "Head of Police of Utopia", "Chief Engineer", "Research Director", "Chief Medical Officer", "Internal Affairs Agent")
 	required_players = 4
 	required_players_bundles = 20
 	required_enemies = 2
@@ -280,7 +280,7 @@
 	for(var/mob/living/carbon/human/player in human_list)
 		if(player.mind)
 			var/role = player.mind.assigned_role
-			if(role in list("Captain", "Head of Security", "Head of Personnel", "Chief Engineer", "Research Director"))
+			if(role in list("Captain", "Head of Police of Utopia", "Head of Personnel", "Chief Engineer", "Research Director"))
 				if (player.stat != DEAD)
 					comcount++
 			else

@@ -241,7 +241,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "toilet"
 
 /area/station/civilian/dormitories/security
-	name = "Security Wing Dormitories"
+	name = "Police of Utopia Wing Dormitories"
 
 /area/station/civilian/dormitories/male
 	name = "Male Dorm"
@@ -492,11 +492,11 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 //Security
 
 /area/station/security/main
-	name = "Security Office"
+	name = "Police of Utopia Office"
 	icon_state = "security"
 
 /area/station/security/lobby
-	name = "Security lobby"
+	name = "Police of Utopia lobby"
 	icon_state = "security"
 
 /area/station/security/brig
@@ -520,7 +520,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "Warden"
 
 /area/station/security/hos
-	name = "Head of Security's Office"
+	name = "Police of Utopia Office"
 	icon_state = "sec_hos"
 
 /area/station/security/detectives_office
@@ -536,7 +536,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	icon_state = "firingrange"
 
 /area/station/security/checkpoint
-	name = "Security Checkpoint"
+	name = "Police of Utopia Checkpoint"
 	icon_state = "security"
 
 /area/station/security/vacantoffice

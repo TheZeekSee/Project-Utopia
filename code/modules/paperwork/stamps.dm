@@ -39,10 +39,10 @@
 	stamp_border = "#1f66a0"
 
 /obj/item/weapon/stamp/hos
-	name = "head of security's rubber stamp"
+	name = "Head of Police of Utopia's rubber stamp"
 	icon_state = "stamp-hos"
 	item_color = "hosred"
-	stamp_message = "Head of Security"
+	stamp_message = "Head of Police of Utopia"
 	stamp_color = "#cc0000"
 	stamp_border = "#990000"
 

@@ -176,7 +176,7 @@
 
 //Security rig
 /datum/design/space_suit_security
-	name = "security hardsuit"
+	name = "Police of Utopia hardsuit"
 	id = "space_suit_security"
 	build_type = MINEFAB
 	build_path = /obj/item/clothing/suit/space/rig/security
@@ -185,7 +185,7 @@
 	category = list("Spacesuit")
 
 /datum/design/space_suit_helmet_security
-	name = "security hardsuit helmet"
+	name = "Police of Utopia hardsuit helmet"
 	id = "space_suit_helmet_security"
 	build_type = MINEFAB
 	build_path = /obj/item/clothing/head/helmet/space/rig/security

@@ -69,11 +69,11 @@
 															"crew manifest" = 5,
 															"digital messenger" = 5,
 															"medical records" = 15,
-															"security records" = 15,
+															"Police of Utopia records" = 15,
 															"interaction module" = 40,
 															"atmosphere sensor" = 5,
 															//"heartbeat sensor" = 10,
-															"security HUD" = 20,
+															"Police of Utopia HUD" = 20,
 															"medical HUD" = 20,
 															"universal translator" = 35,
 															//"projection array" = 15
@@ -326,7 +326,7 @@
 					var/datum/data/record/R = record
 					var/datum/data/record/M = record
 					if (!( data_core.general.Find(R) ))
-						src.temp = "Unable to locate requested security record. Record may have been deleted, or never have existed."
+						src.temp = "Unable to locate requested Police of Utopia record. Record may have been deleted, or never have existed."
 					else
 						for(var/datum/data/record/E in data_core.security)
 							if ((E.fields["name"] == R.fields["name"] || E.fields["id"] == R.fields["id"]))
@@ -593,8 +593,8 @@
 			dat += "<a href='byond://?src=\ref[src];software=manifest;sub=0'>Crew Manifest</a> <br>"
 		if(s == "medical records")
 			dat += "<a href='byond://?src=\ref[src];software=medicalrecord;sub=0'>Medical Records</a> <br>"
-		if(s == "security records")
-			dat += "<a href='byond://?src=\ref[src];software=securityrecord;sub=0'>Security Records</a> <br>"
+		if(s == "Police of Utopia records")
+			dat += "<a href='byond://?src=\ref[src];software=securityrecord;sub=0'>Police of Utopia Records</a> <br>"
 		if(s == "remote signaller")
 			dat += "<a href='byond://?src=\ref[src];software=signaller;sub=0'>Remote Signaller</a> <br>"
 	dat += "<br>"
@@ -606,7 +606,7 @@
 			dat += "<a href='byond://?src=\ref[src];software=atmosensor;sub=0'>Atmospheric Sensor</a> <br>"
 		if(s == "heartbeat sensor")
 			dat += "<a href='byond://?src=\ref[src];software=[s]'>Heartbeat Sensor</a> <br>"
-		if(s == "security HUD")	//This file has to be saved as ANSI or this will not display correctly
+		if(s == "Police of Utopia HUD")	//This file has to be saved as ANSI or this will not display correctly
 			dat += "<a href='byond://?src=\ref[src];software=securityhud;sub=0'>Facial Recognition Suite</a> [(src.secHUD) ? "<font color=#55FF55>•</font>" : "<font color=#FF5555>•</font>"] <br>"
 		if(s == "medical HUD")	//This file has to be saved as ANSI or this will not display correctly
 			dat += "<a href='byond://?src=\ref[src];software=medicalhud;sub=0'>Medical Analysis Suite</a> [(src.medHUD) ? "<font color=#55FF55>•</font>" : "<font color=#FF5555>•</font>"] <br>"
@@ -758,20 +758,20 @@
 /mob/living/silicon/pai/proc/softwareSecurityRecord()
 	var/dat = ""
 	if(src.subscreen == 0)
-		dat += "<h2>Security Records</h2><HR>"
+		dat += "<h2>Police of Utopia Records</h2><HR>"
 		if(!isnull(data_core.general))
 			for(var/datum/data/record/R in sortRecord(data_core.general))
 				dat += text("<A href='?src=\ref[];sec_rec=\ref[];software=securityrecord;sub=1'>[]: []<BR>", src, R, R.fields["id"], R.fields["name"])
 	if(src.subscreen == 1)
-		dat += "<h3>Security Record</h3>"
+		dat += "<h3>Police of Utopia Record</h3>"
 		if ((istype(src.securityActive1, /datum/data/record) && data_core.general.Find(src.securityActive1)))
 			dat += text("Name: <A href='?src=\ref[];field=name'>[]</A><BR>\nID: <A href='?src=\ref[];field=id'>[]</A><BR>\nSex: <A href='?src=\ref[];field=sex'>[]</A><BR>\nAge: <A href='?src=\ref[];field=age'>[]</A><BR>\nRank: <A href='?src=\ref[];field=rank'>[]</A><BR>\nFingerprint: <A href='?src=\ref[];field=fingerprint'>[]</A><BR>\nPhysical Status: []<BR>\nMental Status: []<BR>", src, src.securityActive1.fields["name"], src, src.securityActive1.fields["id"], src, src.securityActive1.fields["sex"], src, src.securityActive1.fields["age"], src, src.securityActive1.fields["rank"], src, src.securityActive1.fields["fingerprint"], src.securityActive1.fields["p_stat"], src.securityActive1.fields["m_stat"])
 		else
-			dat += "<pre>Requested security record not found,</pre><BR>"
+			dat += "<pre>Requested Police of Utopia record not found,</pre><BR>"
 		if ((istype(src.securityActive2, /datum/data/record) && data_core.security.Find(src.securityActive2)))
-			dat += text("<BR>\nSecurity Data<BR>\nCriminal Status: []<BR>\n<BR>\nMinor Crimes: <A href='?src=\ref[];field=mi_crim'>[]</A><BR>\nDetails: <A href='?src=\ref[];field=mi_crim_d'>[]</A><BR>\n<BR>\nMajor Crimes: <A href='?src=\ref[];field=ma_crim'>[]</A><BR>\nDetails: <A href='?src=\ref[];field=ma_crim_d'>[]</A><BR>\n<BR>\nImportant Notes:<BR>\n\t<A href='?src=\ref[];field=notes'>[]</A><BR>\n<BR>\n<CENTER><B>Comments/Log</B></CENTER><BR>", src.securityActive2.fields["criminal"], src, src.securityActive2.fields["mi_crim"], src, src.securityActive2.fields["mi_crim_d"], src, src.securityActive2.fields["ma_crim"], src, src.securityActive2.fields["ma_crim_d"], src, src.securityActive2.fields["notes"])
+			dat += text("<BR>\nPolice of Utopia Data<BR>\nCriminal Status: []<BR>\n<BR>\nMinor Crimes: <A href='?src=\ref[];field=mi_crim'>[]</A><BR>\nDetails: <A href='?src=\ref[];field=mi_crim_d'>[]</A><BR>\n<BR>\nMajor Crimes: <A href='?src=\ref[];field=ma_crim'>[]</A><BR>\nDetails: <A href='?src=\ref[];field=ma_crim_d'>[]</A><BR>\n<BR>\nImportant Notes:<BR>\n\t<A href='?src=\ref[];field=notes'>[]</A><BR>\n<BR>\n<CENTER><B>Comments/Log</B></CENTER><BR>", src.securityActive2.fields["criminal"], src, src.securityActive2.fields["mi_crim"], src, src.securityActive2.fields["mi_crim_d"], src, src.securityActive2.fields["ma_crim"], src, src.securityActive2.fields["ma_crim_d"], src, src.securityActive2.fields["notes"])
 		else
-			dat += "<pre>Requested security record not found,</pre><BR>"
+			dat += "<pre>Requested Police of Utopia record not found,</pre><BR>"
 		dat += text("<BR>\n<A href='?src=\ref[];software=securityrecord;sub=0'>Back</A><BR>", src)
 	return dat
 
@@ -959,7 +959,7 @@
 					botchecked = 1
 					if(istype(hackobj, /obj/machinery/bot/secbot/ed209))
 						dat += "ED209 "
-					dat += "Security Bot.<br>"
+					dat += "Police of Utopia Bot.<br>"
 					var/obj/machinery/bot/secbot/Temp = hackobj
 					dat += "<a href='byond://?src=\ref[src];software=interaction;interactwith=[INTERACTION_SECBOT_ID_CHECKER];sub=0'>Toggle ID Checker</a> (Currently [Temp.idcheck ? "Active" : "Disabled"]) <br>"
 					dat += "<a href='byond://?src=\ref[src];software=interaction;interactwith=[INTERACTION_SECBOT_CHECKING_RECORDS];sub=0'>Toggle Records Checker</a> (Currently [Temp.check_records ? "Active" : "Disabled"]) <br>"

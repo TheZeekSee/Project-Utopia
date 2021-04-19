@@ -160,7 +160,7 @@
 		. += 					"<br><b>Records:</b>"
 		. += 					"<br>Medical Records:"
 		. += 					" <a href=\"byond://?src=\ref[user];preference=records;task=med_record\">[length(med_record)>0?"[copytext_char(med_record, 1, 3)]...":"\[...\]"]</a>"
-		. += 					"<br>Security Records:"
+		. += 					"<br>Police of Utopia Records:"
 		. += 					" <a href=\"byond://?src=\ref[user];preference=records;task=sec_record\">[length(sec_record)>0?"[copytext_char(sec_record, 1, 3)]...":"\[...\]"]</a>"
 		. += 					"<br>Employment Records:"
 		. += 					" <a href=\"byond://?src=\ref[user];preference=records;task=gen_record\">[length(gen_record)>0?"[copytext_char(gen_record, 1, 3)]...":"\[...\]"]</a>"
@@ -191,7 +191,7 @@
 						med_record = medmsg
 
 				if("sec_record")
-					var/secmsg = sanitize(input(usr,"Set your security notes here.","Security Records",input_default(sec_record)) as message, MAX_PAPER_MESSAGE_LEN, extra = FALSE)
+					var/secmsg = sanitize(input(usr,"Set your Police of Utopia notes here.","Police of Utopia Records",input_default(sec_record)) as message, MAX_PAPER_MESSAGE_LEN, extra = FALSE)
 
 					if(secmsg != null)
 						sec_record = secmsg

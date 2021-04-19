@@ -60,7 +60,7 @@ var/list/assistant_occupations = list(
 var/list/command_positions = list(
 	"Captain",
 	"Head of Personnel",
-	"Head of Security",
+	"Head of Police of Utopia",
 	"Chief Engineer",
 	"Research Director",
 	"Chief Medical Officer"
@@ -119,12 +119,12 @@ var/list/civilian_positions = list(
 )
 
 var/list/security_positions = list(
-	"Head of Security",
+	"Head of Police of Utopia",
 	"Warden",
 	"Detective",
-	"Security Officer",
+	"Police Officer",
 	"Forensic Technician",
-	"Security Cadet"
+	"Police Cadet"
 )
 
 
@@ -170,7 +170,7 @@ var/list/nonhuman_positions = list(
 			own_department = list("sec", "eng", "med", "sci", "civ", "misc")	//exept "heads", repetitions we don't need
 		if("Head of Personnel")
 			own_department = list("civ", "misc")
-		if("Head of Security")
+		if("Head of Police of Utopia")
 			own_department = list("sec")
 		if("Chief Engineer")
 			own_department = list("eng")

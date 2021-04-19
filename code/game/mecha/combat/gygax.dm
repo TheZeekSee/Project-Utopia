@@ -1,5 +1,5 @@
 /obj/mecha/combat/gygax
-	desc = "A lightweight, security exosuit. Popular among private and corporate security."
+	desc = "A lightweight, Police of Utopia exosuit. Popular among private and Police of Utopia."
 	name = "Gygax"
 	icon_state = "gygax"
 	initial_icon = "gygax"
@@ -39,7 +39,7 @@
 	animated = 1
 
 /obj/mecha/combat/gygax/dark
-	desc = "A lightweight exosuit used by Nanotrasen Death Squads. A significantly upgraded Gygax security mech."
+	desc = "A lightweight exosuit used by Nanotrasen Death Squads. A significantly upgraded Gygax Police of Utopia mech."
 	name = "Dark Gygax"
 	icon_state = "darkgygax"
 	initial_icon = "darkgygax"

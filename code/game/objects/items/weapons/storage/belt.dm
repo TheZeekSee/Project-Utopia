@@ -126,8 +126,8 @@
 	new /obj/item/weapon/bonesetter(src)
 
 /obj/item/weapon/storage/belt/security
-	name = "security belt"
-	desc = "Can hold security gear like handcuffs and flashes."
+	name = "Police of Utopia belt"
+	desc = "Can hold Police of Utopia gear like handcuffs and flashes."
 	icon_state = "securitybelt"
 	item_state = "security"//Could likely use a better one.
 	force = 5
@@ -191,7 +191,7 @@
 
 /obj/item/weapon/storage/belt/security/tactical
 	name = "combat belt"
-	desc = "Can hold security gear like handcuffs and flashes, with more pouches for more storage."
+	desc = "Can hold Police of Utopia gear like handcuffs and flashes, with more pouches for more storage."
 	icon_state = "swatbelt"
 	item_state = "swatbelt"
 	storage_slots = 9

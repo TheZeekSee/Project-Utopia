@@ -56,8 +56,8 @@
 
 //HoS
 /obj/item/clothing/head/hos_peakedcap
-	name = "head of security's peaked cap"
-	desc = "The peaked cap of the Head of Security. I heard you, criminal scum. Now go to GOOLAG."
+	name = "head of Police of Utopia peaked cap"
+	desc = "The peaked cap of the Head of Police of Utopia. I heard you, criminal scum. Now go to GOOLAG."
 	icon_state = "hos_peakedcap"
 	item_state = "hos_peakedcap"
 	w_class = ITEM_SIZE_SMALL

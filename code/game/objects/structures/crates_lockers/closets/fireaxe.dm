@@ -157,7 +157,7 @@
 
 /obj/structure/closet/fireaxecabinet/attack_ai(mob/user)
 	if(smashed)
-		to_chat(user, "<span class='warning'>The security of the cabinet is compromised.</span>")
+		to_chat(user, "<span class='warning'>The Police of Utopia of the cabinet is compromised.</span>")
 	else
 		locked = !locked
 		if(locked)

@@ -101,7 +101,7 @@
 	item_state = "medicalpack"
 
 /obj/item/weapon/storage/backpack/security
-	name = "security backpack"
+	name = "Police of Utopia backpack"
 	desc = "It's a very robust backpack."
 	icon_state = "securitypack"
 	item_state = "securitypack"
@@ -173,8 +173,8 @@
 	icon_state = "satchel-tox"
 
 /obj/item/weapon/storage/backpack/satchel/sec
-	name = "security satchel"
-	desc = "A robust satchel for security related needs."
+	name = "Police of Utopia satchel"
+	desc = "A robust satchel for Police of Utopia related needs."
 	icon_state = "satchel-sec"
 	item_state = "securitypack"
 

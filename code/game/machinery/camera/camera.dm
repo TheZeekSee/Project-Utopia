@@ -1,5 +1,5 @@
 /obj/machinery/camera
-	name = "security camera"
+	name = "Police of Utopia camera"
 	desc = "It's used to monitor rooms."
 	icon = 'icons/obj/monitors.dmi'
 	icon_state = "camera"

@@ -1,6 +1,6 @@
 /obj/machinery/bot/secbot/ed209
-	name = "ED-209 Security Robot"
-	desc = "A security robot.  He looks less than thrilled."
+	name = "ED-209 Police of Utopia Robot"
+	desc = "A Police of Utopia robot.  He looks less than thrilled."
 	icon = 'icons/obj/aibots.dmi'
 	icon_state = "ed2090"
 	icon_state_arrest = "ed209-c"
@@ -24,7 +24,7 @@
 	icon_state = "ed209_frame"
 	item_state = "ed209_frame"
 	var/build_step = 0
-	var/created_name = "ED-209 Security Robot" //To preserve the name if it's a unique securitron I guess
+	var/created_name = "ED-209 Police of Utopia Robot" //To preserve the name if it's a unique securitron I guess
 	var/lasertag_color = ""
 
 
@@ -43,9 +43,9 @@
 		req_one_access.Cut()
 		req_access = list(access_maint_tunnels)
 		arrest_type = 1
-		if((lasertag_color == "blue") && (name == "ED-209 Security Robot"))//Picks a name if there isn't already a custome one
+		if((lasertag_color == "blue") && (name == "ED-209 Police of Utopia Robot"))//Picks a name if there isn't already a custome one
 			name = pick("BLUE BALLER","SANIC","BLUE KILLDEATH MURDERBOT")
-		if((lasertag_color == "red") && (name == "ED-209 Security Robot"))
+		if((lasertag_color == "red") && (name == "ED-209 Police of Utopia Robot"))
 			name = pick("RED RAMPAGE","RED ROVER","RED KILLDEATH MURDERBOT")
 
 
@@ -64,7 +64,7 @@
 	var/dat
 
 	dat += text({"
-		<TT><B>Automatic Security Unit v2.5</B></TT><BR><BR>
+		<TT><B>Automatic Police of Utopia Unit v2.5</B></TT><BR><BR>
 		Status: []<BR>
 		Behaviour controls are [locked ? "locked" : "unlocked"]<BR>
 		Maintenance panel panel is [open ? "opened" : "closed"]"},
@@ -75,7 +75,7 @@
 		if(!lasertag_color)
 			dat += text({"<BR>
 				Check for Weapon Authorization: []<BR>
-				Check Security Records: []<BR>
+				Check Police of Utopia Records: []<BR>
 				Operating Mode: []<BR>
 				Report Arrests: []"},
 

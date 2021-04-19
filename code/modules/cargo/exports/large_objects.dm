@@ -107,5 +107,5 @@
 
 /datum/export/large/barrier
 	cost = 325
-	unit_name = "security barrier"
+	unit_name = "Police of Utopia barrier"
 	export_types = list(/obj/machinery/deployable/barrier)

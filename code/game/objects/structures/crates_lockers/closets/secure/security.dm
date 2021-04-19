@@ -93,7 +93,7 @@
 	new /obj/item/clothing/suit/goodman_jacket(src)
 
 /obj/structure/closet/secure_closet/hos
-	name = "Head of Security's Locker"
+	name = "Head of Police of Utopia's Locker"
 	req_access = list(access_hos)
 	icon_state = "hossecure1"
 	icon_closed = "hossecure"
@@ -185,7 +185,7 @@
 	#endif
 
 /obj/structure/closet/secure_closet/security
-	name = "Security Officer's Locker"
+	name = "Police Officer's Locker"
 	req_access = list(access_brig)
 	icon_state = "sec1"
 	icon_closed = "sec"

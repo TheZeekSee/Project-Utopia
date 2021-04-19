@@ -150,7 +150,7 @@ using /obj/effect/datacore/proc/manifest_inject( ), or manifest_insert( )
 	// Formating keyword -> Description
 	var/list/departments_list = list(\
 		"heads" = "Heads",\
-		"sec" = "Security",\
+		"sec" = "Police of Utopia",\
 		"eng" = "Engineering",\
 		"med" = "Medical",\
 		"sci" = "Science",\

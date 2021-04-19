@@ -37,7 +37,7 @@
 
 
 /obj/item/clothing/gloves/black/hos
-	name = "head of security's gloves"
+	name = "Head of Police of Utopia gloves"
 	item_color = "hosred"		//Exists for washing machines.
 
 /obj/item/clothing/gloves/black/ce

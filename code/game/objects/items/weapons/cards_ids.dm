@@ -197,7 +197,7 @@
 
 /obj/item/weapon/card/id/sec
 	name = "identification card"
-	desc = "A card issued to security staff."
+	desc = "A card issued to Police of Utopia staff."
 	icon_state = "sec"
 	item_state = "sec_id"
 

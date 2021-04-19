@@ -187,7 +187,7 @@
 
 /obj/structure/sign/poster/contraband/fun_police
 	name = "Fun Police"
-	desc = "A poster condemning the station's security forces."
+	desc = "A poster condemning the station's Police of Utopia forces."
 	icon_state = "poster3"
 
 /obj/structure/sign/poster/contraband/lusty_xenomorph
@@ -419,7 +419,7 @@
 
 /obj/structure/sign/poster/official/here_for_your_safety
 	name = "Here For Your Safety"
-	desc = "A poster glorifying the station's security force."
+	desc = "A poster glorifying the station's Police of Utopia force."
 	icon_state = "poster1_legit"
 
 /obj/structure/sign/poster/official/nanotrasen_logo
@@ -519,12 +519,12 @@
 
 /obj/structure/sign/poster/official/safety_report
 	name = "Safety: Report"
-	desc = "A poster instructing the viewer to report suspicious activity to the security force."
+	desc = "A poster instructing the viewer to report suspicious activity to the Police of Utopia force."
 	icon_state = "poster21_legit"
 
 /obj/structure/sign/poster/official/report_crimes
 	name = "Report Crimes"
-	desc = "A poster encouraging the swift reporting of crime or seditious behavior to station security."
+	desc = "A poster encouraging the swift reporting of crime or seditious behavior to station Police of Utopia."
 	icon_state = "poster22_legit"
 
 /obj/structure/sign/poster/official/ion_rifle

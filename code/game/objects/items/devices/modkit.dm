@@ -220,7 +220,7 @@
 
 
 /obj/item/device/modkit/sec
-	name = "Security hardsuit modification kit"
+	name = "Police of Utopia hardsuit modification kit"
 	permitted_types = list(
 		/obj/item/clothing/head/helmet/space/rig/security,
 		/obj/item/clothing/suit/space/rig/security
@@ -231,19 +231,19 @@
 	)
 
 /obj/item/device/modkit/sec/tajaran
-	name = "Tajaran security hardsuit modification kit"
+	name = "Tajaran Police of Utopia hardsuit modification kit"
 	target_species = TAJARAN
 
 /obj/item/device/modkit/sec/unathi
-	name = "Unathi security hardsuit modification kit"
+	name = "Unathi Police of Utopia hardsuit modification kit"
 	target_species = UNATHI
 
 /obj/item/device/modkit/sec/skrell
-	name = "Skrellian security hardsuit modification kit"
+	name = "Skrellian Police of Utopia hardsuit modification kit"
 	target_species = SKRELL
 
 /obj/item/device/modkit/sec/vox
-	name = "Vox security hardsuit modification kit"
+	name = "Vox Police of Utopia hardsuit modification kit"
 	target_species = VOX
 
 

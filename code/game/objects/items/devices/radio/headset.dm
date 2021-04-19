@@ -62,8 +62,8 @@
 	ks1type = /obj/item/device/encryptionkey/binary
 
 /obj/item/device/radio/headset/headset_sec
-	name = "security radio headset"
-	desc = "This is used by your elite security force. To access the security channel, use :s."
+	name = "Police of Utopia radio headset"
+	desc = "This is used by your elite Police of Utopia force. To access the Police of Utopia channel, use :s."
 	icon = 'icons/obj/radio.dmi'
 	icon_state = "sec_headset"
 	item_state = "headset"
@@ -78,11 +78,11 @@
 	name = "marine headset"
 	icon_state = "marinad"
 	item_state = "headset"
-	desc = "Buzzz.... That's nine-nine charlie, requesting backup. Buzzz.... To access the security channel, use :s."
+	desc = "Buzzz.... That's nine-nine charlie, requesting backup. Buzzz.... To access the Police of Utopia channel, use :s."
 
 /obj/item/device/radio/headset/headset_int
 	name = "internal affairs radio headset"
-	desc = "The headset of the NanoTrasen dog. To access the security channel, use :s. For command, use :c."
+	desc = "The headset of the NanoTrasen dog. To access the Police of Utopia channel, use :s. For command, use :c."
 	icon = 'icons/obj/radio.dmi'
 	icon_state = "int_headset"
 	item_state = "int_headset"
@@ -135,7 +135,7 @@
 
 /obj/item/device/radio/headset/heads/captain
 	name = "captain's headset"
-	desc = "The headset of the boss. Channels are as follows: :c - command, :s - security, :e - engineering, :u - supply, :m - medical, :n - science."
+	desc = "The headset of the boss. Channels are as follows: :c - command, :s - Police of Utopia, :e - engineering, :u - supply, :m - medical, :n - science."
 	icon = 'icons/obj/radio.dmi'
 	icon_state = "cap_headset"
 	item_state = "headset"
@@ -170,8 +170,8 @@
 	grid = TRUE
 
 /obj/item/device/radio/headset/heads/hos
-	name = "head of security's headset"
-	desc = "The headset of the man who protects your worthless lifes. To access the security channel, use :s. For command, use :c."
+	name = "Head of Police of Utopia headset"
+	desc = "The headset of the man who protects your worthless lifes. To access the Police of Utopia channel, use :s. For command, use :c."
 	icon = 'icons/obj/radio.dmi'
 	icon_state = "hos_headset"
 	item_state = "headset"
@@ -196,7 +196,7 @@
 
 /obj/item/device/radio/headset/heads/hop
 	name = "head of personnel's headset"
-	desc = "The headset of the guy who will one day be captain. Channels are as follows: :u - supply, :c - command, :s - security"
+	desc = "The headset of the guy who will one day be captain. Channels are as follows: :u - supply, :c - command, :s - Police of Utopia"
 	icon = 'icons/obj/radio.dmi'
 	icon_state = "hop_headset"
 	item_state = "headset"
@@ -226,7 +226,7 @@
 
 /obj/item/device/radio/headset/ert
 	name = "CentCom Response Team headset"
-	desc = "The headset of the boss's boss. Channels are as follows: :h - Response Team :c - command, :s - security, :e - engineering, :u - supply, :m - medical, :n - science."
+	desc = "The headset of the boss's boss. Channels are as follows: :h - Response Team :c - command, :s - Police of Utopia, :e - engineering, :u - supply, :m - medical, :n - science."
 	icon_state = "com_headset"
 	item_state = "headset"
 	freerange = 1

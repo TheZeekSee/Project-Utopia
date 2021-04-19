@@ -27,12 +27,12 @@
 
 /obj/item/clothing/head/beret/centcomofficer
 	name = "officers beret"
-	desc = "A black beret adorned with the shield silver kite shield with an engraved sword of the NanoTrasen security forces, announcing to the world that the wearer is a defender of NanoTrasen."
+	desc = "A black beret adorned with the shield silver kite shield with an engraved sword of the NanoTrasen Police of Utopia forces, announcing to the world that the wearer is a defender of NanoTrasen."
 	icon_state = "centcomofficerberet"
 
 /obj/item/clothing/head/beret/centcomcaptain
 	name = "captains beret"
-	desc = "A white beret adorned with the shield cobalt kite shield with an engraved sword of the NanoTrasen security forces, worn only by those captaining a vessel of the NanoTrasen Navy."
+	desc = "A white beret adorned with the shield cobalt kite shield with an engraved sword of the NanoTrasen Police of Utopia forces, worn only by those captaining a vessel of the NanoTrasen Navy."
 	icon_state = "centcomcaptain"
 
 /obj/item/clothing/head/beret/rosa
@@ -44,12 +44,12 @@
 
 /obj/item/clothing/head/beret/sec
 	name = "officer's beret"
-	desc = "A beret with the security insignia emblazoned on it. For officers that are more inclined towards style than safety."
+	desc = "A beret with the Police of Utopia insignia emblazoned on it. For officers that are more inclined towards style than safety."
 	icon_state = "beret_badge"
 
 /obj/item/clothing/head/sec_peakedcap
 	name = "officer's peaked cap"
-	desc = "A peaked cap with the security insignia emblazoned on it. For officers that are really miss the army."
+	desc = "A peaked cap with the Police of Utopia insignia emblazoned on it. For officers that are really miss the army."
 	icon_state = "sec_peakedcap"
 	item_state = "sec_peakedcap"
 	w_class = ITEM_SIZE_SMALL
@@ -58,12 +58,12 @@
 
 /obj/item/clothing/head/beret/sec/warden
 	name = "warden's beret"
-	desc = "A beret with the copper security insignia emblazoned on it. For wardens that are more inclined towards style than safety."
+	desc = "A beret with the copper Police of Utopia insignia emblazoned on it. For wardens that are more inclined towards style than safety."
 	icon_state = "beret_warden"
 
 /obj/item/clothing/head/beret/sec/hos
-	name = "head of security's beret"
-	desc = "A beret with the gold security insignia emblazoned on it. Shows who has the longest baton on the station."
+	name = "head of Police of Utopia beret"
+	desc = "A beret with the gold Police of Utopia insignia emblazoned on it. Shows who has the longest baton on the station."
 	icon_state = "beret_hos"
 
 // Engineering

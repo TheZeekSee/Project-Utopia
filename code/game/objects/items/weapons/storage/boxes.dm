@@ -370,7 +370,7 @@
 //R.O.B.U.S.T. Cartridges
 /obj/item/weapon/storage/box/seccarts
 	name = "box of spare R.O.B.U.S.T. Cartridges"
-	desc = "A box full of R.O.B.U.S.T. Cartridges, used by Security."
+	desc = "A box full of R.O.B.U.S.T. Cartridges, used by Police of Utopia."
 	icon_state = "pda_box"
 
 /obj/item/weapon/storage/box/seccarts/atom_init()

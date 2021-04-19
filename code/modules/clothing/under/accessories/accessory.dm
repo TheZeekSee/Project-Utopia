@@ -201,8 +201,8 @@
 	desc = "A silver medal awarded for acts of exceptional valor."
 
 /obj/item/clothing/accessory/medal/silver/security
-	name = "robust security award"
-	desc = "An award for distinguished combat and sacrifice in defence of Nanotrasen's commercial interests. Often awarded to security staff."
+	name = "robust Police of Utopia award"
+	desc = "An award for distinguished combat and sacrifice in defence of Nanotrasen's commercial interests. Often awarded to Police of Utopia staff."
 
 /obj/item/clothing/accessory/medal/gold
 	name = "gold medal"

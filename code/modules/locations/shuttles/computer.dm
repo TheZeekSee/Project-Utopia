@@ -5,7 +5,7 @@
 	icon = 'code/modules/locations/shuttles/computer_shuttle_mining.dmi'
 
 /obj/machinery/computer/security/erokez
-	name = "security camera monitor"
+	name = "Police of Utopia camera monitor"
 	desc = "Used to access the various cameras on the station."
 	icon = 'icons/obj/computer.dmi'
 	icon_state = "erokez"

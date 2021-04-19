@@ -2,7 +2,7 @@
 //GUNS RANDOM
 /obj/random/mecha/wreckage
 	name = "Random Mecha Wreckage"
-	desc = "This is a random security sidearm."
+	desc = "This is a random Police of Utopia sidearm."
 	icon = 'icons/obj/gun.dmi'
 	icon_state = "9mm_glock"
 /obj/random/mecha/wreckage/item_to_spawn()
@@ -18,7 +18,7 @@
 
 /obj/random/mecha/working
 	name = "Random Working Mecha"
-	desc = "This is a random security sidearm."
+	desc = "This is a random Police of Utopia sidearm."
 	icon = 'icons/obj/gun.dmi'
 	icon_state = "9mm_glock"
 /obj/random/mecha/working/item_to_spawn()

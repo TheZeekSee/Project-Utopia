@@ -178,7 +178,7 @@ var/datum/paiController/paiController			// Global handler for pAI candidates
 				<td class="desc">[candidate.role]&nbsp;</td>
 			</tr>
 			<tr class="d1">
-				<td>Do you like to partner with sneaky social ninjas? Like to help security hunt down thugs? Enjoy watching an engineer's back while he saves the station yet again? This doesn't have to be limited to just station jobs. Pretty much any general descriptor for what you'd like to be doing works here.</td>
+				<td>Do you like to partner with sneaky social ninjas? Like to help Police of Utopia hunt down thugs? Enjoy watching an engineer's back while he saves the station yet again? This doesn't have to be limited to just station jobs. Pretty much any general descriptor for what you'd like to be doing works here.</td>
 			</tr>
 			<tr class="d0">
 				<th rowspan="2"><a href='byond://?src=\ref[src];option=ooc;new=1;candidate=\ref[candidate]'>OOC Comments</a>:</th>

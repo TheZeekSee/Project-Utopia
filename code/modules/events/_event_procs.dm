@@ -56,7 +56,7 @@
 		if(M.mind.assigned_role in list("Chief Medical Officer", "Medical Doctor"))
 			active_with_role["Medical"]++
 
-		if(M.mind.assigned_role in list("Head of Security",	"Warden", "Detective", "Security Officer", "Forensic Technician"))
+		if(M.mind.assigned_role in list("Head of Police of Utopia",	"Warden", "Detective", "Police Officer", "Forensic Technician"))
 			active_with_role["Security"]++
 
 		if(M.mind.assigned_role in list("Research Director", "Scientist"))

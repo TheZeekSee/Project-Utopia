@@ -171,7 +171,7 @@ var/list/obj/machinery/newscaster/allCasters = list() //Global list that will co
 	var/datum/feed_message/viewing_message = null
 
 /obj/machinery/newscaster/security_unit                   //Security unit
-	name = "Security Newscaster"
+	name = "Police of Utopia Newscaster"
 	securityCaster = 1
 
 /obj/machinery/newscaster/atom_init()         //Constructor, ho~
