@@ -29,7 +29,7 @@ var/list/net_announcer_secret = list()
 	var/log_asset = 0
 	var/log_tgui = 0
 	var/sql_enabled = 0					// for sql switching
-	var/allow_admin_ooccolor = 0		// Allows admins with relevant permissions to have their own ooc colour
+	var/allow_admin_ooccolor = 1		// Allows admins with relevant permissions to have their own ooc colour
 	var/ert_admin_call_only = 0
 	var/allow_admin_jump = 1			// allows admin jumping
 	var/allow_admin_spawning = 1		// allows admin item spawning
@@ -52,7 +52,7 @@ var/list/net_announcer_secret = list()
 	var/humans_need_surnames = 0
 	var/allow_random_events = 1			// enables random events mid-round when set to 1
 	var/allow_ai = 1					// allow ai job
-	var/hostedby = null
+	var/hostedby = "TheZeekSee"
 	var/respawn = 1
 	var/usewhitelist = 0
 	var/serverwhitelist = 0
@@ -83,19 +83,19 @@ var/list/net_announcer_secret = list()
 
 	var/deathtime_required = 18000	//30 minutes
 
-	var/usealienwhitelist = 0
+	var/usealienwhitelist = 1
 	var/use_alien_job_restriction = 0
 	var/list/whitelisted_species_by_time = list()
 
 	var/server
 	var/banappeals
 	var/siteurl
-	var/wikiurl
+	var/wikiurl = "https://discord.gg/zdaXjN4GCN"
 	var/forumurl
 	var/media_base_url = "https://example"
-	var/server_rules_url
-	var/discord_invite_url
-	var/customitems_info_url
+	var/server_rules_url = "https://discord.gg/zdaXjN4GCN"
+	var/discord_invite_url = "https://discord.gg/zdaXjN4GCN"
+	var/customitems_info_url = "https://discord.gg/zdaXjN4GCN"
 
 	// Changelog
 	var/changelog_link = ""
@@ -137,15 +137,15 @@ var/list/net_announcer_secret = list()
 	// No custom time
 	var/list/event_first_run = list(EVENT_LEVEL_MUNDANE = null,
 									EVENT_LEVEL_MODERATE = null,
-									EVENT_LEVEL_MAJOR = list("lower" = 80 MINUTES, "upper" = 100 MINUTES))
+									EVENT_LEVEL_MAJOR = list("lower" = 20 MINUTES, "upper" = 40 MINUTES))
 	// The lowest delay until next event
 	var/list/event_delay_lower = list(EVENT_LEVEL_MUNDANE  = 10 MINUTES,
-									  EVENT_LEVEL_MODERATE = 30 MINUTES,
-									  EVENT_LEVEL_MAJOR    = 50 MINUTES)
+									  EVENT_LEVEL_MODERATE = 20 MINUTES,
+									  EVENT_LEVEL_MAJOR    = 30 MINUTES)
 	// The upper delay until next event
 	var/list/event_delay_upper = list(EVENT_LEVEL_MUNDANE  = 15 MINUTES,
-									  EVENT_LEVEL_MODERATE = 45 MINUTES,
-									  EVENT_LEVEL_MAJOR    = 70 MINUTES)
+									  EVENT_LEVEL_MODERATE = 35 MINUTES,
+									  EVENT_LEVEL_MAJOR    = 45 MINUTES)
 
 	var/admin_legacy_system = 0	//Defines whether the server uses the legacy admin system with admins.txt or the SQL system. Config option in config.txt
 	var/ban_legacy_system = 0	//Defines whether the server uses the legacy banning system with the files in /data or the SQL system. Config option in config.txt
@@ -190,7 +190,7 @@ var/list/net_announcer_secret = list()
 
 	var/craft_recipes_visibility = FALSE // If false, then users won't see crafting recipes in personal crafting menu until they have all required components and then it will show up.
 	var/starlight = FALSE	// Whether space turfs have ambient light or not
-	var/nightshift = FALSE
+	var/nightshift = TRUE
 
 	var/list/maplist = list()
 	var/datum/map_config/defaultmap
