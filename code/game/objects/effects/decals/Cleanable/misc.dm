@@ -8,6 +8,15 @@
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "shards"
 
+/obj/effect/decal/cleanable/rust
+	name = "rusted panel"
+	desc = "It looks like some of the surface is covered with rust"
+	gender = PLURAL
+	anchored = 1
+	layer = 2
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "rust1"
+
 /obj/effect/decal/cleanable/ash
 	name = "ashes"
 	desc = "Ashes to ashes, dust to dust, and into space."

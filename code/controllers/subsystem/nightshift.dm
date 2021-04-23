@@ -6,7 +6,7 @@ SUBSYSTEM_DEF(nightshift)
 	flags = SS_NO_FIRE // change to SS_NO_TICK_CHECK for dynamic ligthing changes
 
 	var/nightshift_active = FALSE
-	var/nightshift_start_time = 23
+	var/nightshift_start_time = 18
 	var/nightshift_end_time = 8
 	var/high_security_mode = FALSE
 

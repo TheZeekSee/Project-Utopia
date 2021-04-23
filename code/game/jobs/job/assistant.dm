@@ -1,5 +1,5 @@
 /datum/job/assistant
-	title = "Test Subject"
+	title = "Utopian"
 	flag = ASSISTANT
 	department_flag = CIVILIAN
 	faction = "Station"

@@ -112,8 +112,8 @@
 	. = ..()
 
 /obj/item/weapon/implantcase/loyalty
-	name = "Glass Case- 'Loyalty'"
-	desc = "A case containing a loyalty implant."
+	name = "Glass Case- 'Insight'"
+	desc = "A case containing the linsight implant."
 	icon = 'icons/obj/items.dmi'
 	icon_state = "implantcase-r"
 

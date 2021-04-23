@@ -83,7 +83,7 @@ var/list/net_announcer_secret = list()
 
 	var/deathtime_required = 18000	//30 minutes
 
-	var/usealienwhitelist = 1
+	var/usealienwhitelist = 0
 	var/use_alien_job_restriction = 0
 	var/list/whitelisted_species_by_time = list()
 
