@@ -9,13 +9,22 @@
 	icon_state = "shards"
 
 /obj/effect/decal/cleanable/rust
-	name = "rusted panel"
+	name = "Some rust"
 	desc = "It looks like some of the surface is covered with rust"
 	gender = PLURAL
 	anchored = 1
 	layer = 2
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "rust1"
+
+/obj/effect/decal/cleanable/rustl
+	name = "Little rust"
+	desc = "It looks like some of the surface is covered with rust"
+	gender = PLURAL
+	anchored = 1
+	layer = 2
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "rust5"
 
 /obj/effect/decal/cleanable/ash
 	name = "ashes"
