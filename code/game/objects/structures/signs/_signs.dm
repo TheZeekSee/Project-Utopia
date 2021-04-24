@@ -122,9 +122,9 @@
 				return
 	return ..()
 /obj/structure/sign/nanotrasen
-	name = "Nanotrasen Logo"
-	desc = "A sign with the Nanotrasen Logo on it. Glory to Nanotrasen!"
-	icon_state = "nanotrasen"
+	name = "Utopia Logo"
+	desc = "A sign with the Utopia Logo on it. Glory to Utopia!"
+	icon_state = "utopia"
 
 /obj/structure/sign/mark
 	layer = TURF_LAYER
