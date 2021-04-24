@@ -32,3 +32,5 @@
 	belt = /obj/item/device/pda/heads/hop
 
 	r_hand_back = /obj/item/weapon/storage/box/ids
+
+	implants = list(/obj/item/weapon/implant/mindshield/loyalty)
