@@ -890,6 +890,14 @@
 	bitesize = 2
 	list_reagents = list("sugar" = 4)
 
+/obj/item/weapon/reagent_containers/food/snacks/semki
+	name = "Semki"
+	icon_state = "semki"
+	desc = "it looks so Russian"
+	trash = /obj/item/trash/semki
+	bitesize = 2
+	list_reagents = list("nutriment" = 1)
+
 /obj/item/weapon/reagent_containers/food/snacks/cheesiehonkers
 	name = "Cheesie Honkers"
 	icon_state = "cheesie_honkers"

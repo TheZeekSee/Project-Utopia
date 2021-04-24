@@ -11,6 +11,11 @@
 	name = "4no raisins"
 	icon_state= "4no_raisins"
 
+/obj/item/trash/semki
+	name = "Semki stubs"
+	desc = "It looks like the Russians have been here"
+	icon_state = "semki"
+
 /obj/item/trash/candy
 	name = "Candy"
 	icon_state= "candy"
