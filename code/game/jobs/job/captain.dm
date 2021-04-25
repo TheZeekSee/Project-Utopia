@@ -10,7 +10,7 @@
 	idtype = /obj/item/weapon/card/id/gold
 	req_admin_notify = 1
 	access = list() 			//See get_access()
-	salary = 300
+	salary = 150
 	minimal_player_age = 14
 	minimal_player_ingame_minutes = 3900
 	outfit = /datum/outfit/job/captain
@@ -38,7 +38,7 @@
 	selection_color = "#ddddff"
 	idtype = /obj/item/weapon/card/id/silver
 	req_admin_notify = 1
-	salary = 150
+	salary = 100
 	minimal_player_age = 10
 	minimal_player_ingame_minutes = 2400
 	access = list(

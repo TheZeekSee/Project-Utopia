@@ -15,7 +15,7 @@
 		access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
 		access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway, access_detective
 	)
-	salary = 110
+	salary = 100
 	minimal_player_age = 14
 	minimal_player_ingame_minutes = 2400
 	outfit = /datum/outfit/job/hos
@@ -40,7 +40,7 @@
 	selection_color = "#ffeeee"
 	idtype = /obj/item/weapon/card/id/sec
 	access = list(access_security, access_sec_doors, access_brig, access_armory, access_maint_tunnels)
-	salary = 55
+	salary = 40
 	minimal_player_age = 5
 	minimal_player_ingame_minutes = 1800
 	outfit = /datum/outfit/job/warden
@@ -65,7 +65,7 @@
 	selection_color = "#ffeeee"
 	idtype = /obj/item/weapon/card/id/sec
 	access = list(access_security, access_sec_doors, access_detective, access_maint_tunnels)
-	salary = 45
+	salary = 35
 	minimal_player_age = 3
 	minimal_player_ingame_minutes = 1560
 	outfit = /datum/outfit/job/detective
@@ -140,7 +140,7 @@
 	selection_color = "#ffeeee"
 	idtype = /obj/item/weapon/card/id/sec
 	access = list(access_sec_doors, access_maint_tunnels)
-	salary = 10
+	salary = 20
 	minimal_player_age = 2
 	minimal_player_ingame_minutes = 520
 	outfit = /datum/outfit/job/cadet

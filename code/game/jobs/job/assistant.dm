@@ -8,7 +8,7 @@
 	supervisors = "absolutely everyone"
 	selection_color = "#dddddd"
 	access = list()			//See /datum/job/assistant/get_access()
-	salary = 20
+	salary = 10
 	alt_titles = list(
 		"Lawyer"         = /datum/outfit/job/assistant/lawyer,
 		"Mecha Operator" = /datum/outfit/job/assistant/mecha_operator,
