@@ -8,8 +8,8 @@
 	if(!(check_rights(R_LOG) && check_rights(R_BAN)))
 		return
 
-	
-	if(!establish_db_connection("erro_messages"))
+	establish_db_connection()
+	if(!dbcon.IsConnected())
 		return
 
 	var/admin_key = admin ? ckey(admin.ckey) : "Adminbot"

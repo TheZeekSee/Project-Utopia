@@ -211,9 +211,8 @@
 		update_brightness(null)
 
 	if(!fuel)
-		icon_state = "[initial(icon_state)]-burned"
-		item_state = "[initial(item_state)]-burned"
-		update_inv_mob()
+		icon_state = "[initial(icon_state)]-empty"
+		item_state = icon_state
 	STOP_PROCESSING(SSobj, src)
 
 /obj/item/device/flashlight/flare/attack_self(mob/user)
@@ -234,7 +233,10 @@
 		src.force = on_damage
 		src.damtype = "fire"
 		item_state = icon_state
-		update_inv_mob()
+		if(user.hand)
+			user.update_inv_l_hand()
+		else
+			user.update_inv_r_hand()
 		START_PROCESSING(SSobj, src)
 
 /obj/item/device/flashlight/slime

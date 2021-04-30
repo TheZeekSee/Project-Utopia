@@ -188,4 +188,5 @@
 /mob/living/carbon/xenomorph/is_vision_obstructed()
 	if(istype(loc, /obj/machinery/atmospherics/pipe))
 		return FALSE
-	return ..()
+	else
+		return ..()

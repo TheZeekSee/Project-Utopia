@@ -5,7 +5,8 @@
 	if(!check_rights(R_BAN))
 		return
 
-	if(!establish_db_connection("erro_ban", "erro_player"))
+	establish_db_connection()
+	if(!dbcon.IsConnected())
 		return
 
 	var/serverip = sanitize_sql("[world.internet_address]:[world.port]")
@@ -142,7 +143,8 @@
 	if(job)
 		sql += " AND job = '[sanitize_sql(job)]'"
 
-	if(!establish_db_connection("erro_ban"))
+	establish_db_connection()
+	if(!dbcon.IsConnected())
 		return
 
 	var/ban_id
@@ -254,7 +256,8 @@
 
 	var/sql = "SELECT ckey FROM erro_ban WHERE id = [id]"
 
-	if(!establish_db_connection("erro_ban"))
+	establish_db_connection()
+	if(!dbcon.IsConnected())
 		return
 
 	var/ban_number = 0 //failsafe
@@ -312,7 +315,8 @@
 
 	if(!check_rights(R_BAN))	return
 
-	if(!establish_db_connection("erro_ban"))
+	establish_db_connection()
+	if(!dbcon.IsConnected())
 		to_chat(usr, "<span class='warning'>Failed to establish database connection</span>")
 		return
 
@@ -509,7 +513,8 @@
 
 //Version of DB_ban_record that can be used without holder.
 /proc/DB_ban_record_2(bantype, mob/banned_mob, duration = -1, reason, job = "", banckey = null, banip = null, bancid = null)
-	if(!establish_db_connection("erro_player"))
+	establish_db_connection()
+	if(!dbcon.IsConnected())
 		return
 
 	var/serverip = sanitize_sql("[world.internet_address]:[world.port]")

@@ -17,13 +17,15 @@
 	var/ckey = ckey(key)
 	var/client/C = global.directory[ckey]
 
+	/* Uncomment this for skip connected clients checks. Broke stckybans sometimes
 	// Don't recheck connected clients.
 	if (!real_bans_only && istype(C) && ckey == C.ckey && computer_id == C.computer_id && address == C.address)
 		return
+	*/
 
 	// Whitelist
-	if(!real_bans_only && config.bunker_ban_mode && is_blocked_by_regisration_panic_bunker_ban_mode(key))
-		return list(BANKEY_REASON="", "desc"="[config.bunker_ban_mode_message]")
+	if(!real_bans_only && config.serverwhitelist && !check_if_a_new_player(key))
+		return list(BANKEY_REASON="", "desc"="[config.serverwhitelist_message]")
 	//Guest Checking
 	if(!real_bans_only && !guests_allowed && IsGuestKey(key))
 		log_access("Failed Login: [key] - Guests not allowed")
@@ -50,7 +52,7 @@
 
 	// Database ban system
 	else
-		if(!establish_db_connection("erro_ban"))
+		if(!establish_db_connection())
 			error("Ban database connection failure. Key [ckey] not checked")
 			log_misc("Ban database connection failure. Key [ckey] not checked")
 			return

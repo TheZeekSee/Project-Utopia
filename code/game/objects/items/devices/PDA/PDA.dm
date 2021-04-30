@@ -1178,7 +1178,7 @@
 
 		if (!P.message_silent)
 			playsound(P, 'sound/machines/twobeep.ogg', VOL_EFFECTS_MASTER)
-			P.audible_message("[bicon(P)] *[P.ttone]*", hearing_distance = 3)
+			audible_message("[bicon(P)] *[P.ttone]*", hearing_distance = 3)
 
 		//Search for holder of the PDA.
 		var/mob/living/L = null

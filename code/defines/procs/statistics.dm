@@ -30,7 +30,10 @@
 	var/sqlbrain = text2num(H.brainloss)
 	var/sqloxy = text2num(H.getOxyLoss())
 
-	if(establish_db_connection("erro_death"))
+	establish_db_connection()
+	if(!dbcon.IsConnected())
+		log_game("SQL ERROR during death reporting. Failed to connect.")
+	else
 		var/DBQuery/query = dbcon.NewQuery("INSERT INTO erro_death (name, byondkey, job, special, pod, tod, laname, lakey, gender, bruteloss, fireloss, brainloss, oxyloss, coord) VALUES ('[sqlname]', '[sqlkey]', '[sqljob]', '[sqlspecial]', '[sqlpod]', '[sqltime]', '[laname]', '[lakey]', '[sqlgender]', [sqlbrute], [sqlfire], [sqlbrain], [sqloxy], '[sqlcoord]')")
 		query.Execute()
 
@@ -66,7 +69,10 @@
 	var/sqlbrain = text2num(H.brainloss)
 	var/sqloxy = text2num(H.getOxyLoss())
 
-	if(establish_db_connection("erro_death"))
+	establish_db_connection()
+	if(!dbcon.IsConnected())
+		log_game("SQL ERROR during death reporting. Failed to connect.")
+	else
 		var/DBQuery/query = dbcon.NewQuery("INSERT INTO erro_death (name, byondkey, job, special, pod, tod, laname, lakey, gender, bruteloss, fireloss, brainloss, oxyloss, coord) VALUES ('[sqlname]', '[sqlkey]', '[sqljob]', '[sqlspecial]', '[sqlpod]', '[sqltime]', '[laname]', '[lakey]', '[sqlgender]', [sqlbrute], [sqlfire], [sqlbrain], [sqloxy], '[sqlcoord]')")
 		query.Execute()
 
@@ -83,7 +89,10 @@
 		log_game("Round ended without any feedback being generated. No feedback was sent to the database.")
 		return
 
-	if(establish_db_connection("erro_feedback"))
+	establish_db_connection()
+	if(!dbcon.IsConnected())
+		log_game("SQL ERROR during feedback reporting. Failed to connect.")
+	else
 		for(var/datum/feedback_variable/item in content)
 			var/variable = item.get_variable()
 			var/value = item.get_value()

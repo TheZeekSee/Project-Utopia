@@ -204,7 +204,8 @@ var elements = document.getElementsByName('rights');
 		message_admins("[key_name_admin(usr)] removed[removed_rights] permissions of [adm_ckey]")
 		log_admin("[key_name(usr)] removed[removed_rights] permission of [adm_ckey]")
 
-	if(!establish_db_connection("erro_admin", "erro_admin_log"))
+	establish_db_connection()
+	if(!dbcon.IsConnected())
 		to_chat(usr, "<span class='alert'>Failed to establish database connection</span>")
 		return
 	adm_ckey = ckey(adm_ckey)
@@ -243,12 +244,12 @@ var elements = document.getElementsByName('rights');
 	if(ment_ckey in admin_datums)
 		remove_admin(ment_ckey)
 	mentor_ckeys += ment_ckey
-	if(directory[ment_ckey])
-		mentors += directory[ment_ckey]
+	mentors += directory[ment_ckey]
 	message_admins("[key_name_admin(usr)] added [ment_ckey] to the mentors list")
 	log_admin("[key_name(usr)] added [ment_ckey] to the mentors list")
 
-	if(!establish_db_connection("erro_mentor", "erro_admin_log"))
+	establish_db_connection()
+	if(!dbcon.IsConnected())
 		to_chat(usr, "<span class='alert'>Failed to establish database connection</span>")
 		return
 	ment_ckey = ckey(ment_ckey)
@@ -273,7 +274,8 @@ var elements = document.getElementsByName('rights');
 		message_admins("[key_name_admin(usr)] removed [ment_ckey] from the mentors list")
 		log_admin("[key_name(usr)] removed [ment_ckey] from the mentors list")
 
-		if(!establish_db_connection("erro_mentor", "erro_admin_log"))
+		establish_db_connection()
+		if(!dbcon.IsConnected())
 			to_chat(usr, "<span class='alert'>Failed to establish database connection</span>")
 			return
 		ment_ckey = ckey(ment_ckey)
@@ -292,7 +294,8 @@ var elements = document.getElementsByName('rights');
 	if(!usr.client.holder || !(usr.client.holder.rights & R_PERMISSIONS))
 		to_chat(usr, "<span class='alert'>You do not have permission to do this!</span>")
 		return
-	if(!establish_db_connection("erro_admin", "erro_admin_log"))
+	establish_db_connection()
+	if(!dbcon.IsConnected())
 		to_chat(usr, "<span class='alert'>Failed to establish database connection</span>")
 		return
 	if(!adm_ckey || !new_rank)
