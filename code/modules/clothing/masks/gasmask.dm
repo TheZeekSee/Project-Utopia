@@ -242,6 +242,11 @@
 	desc = "Remember, remember, the fifth of November"
 	icon_state = "fawkes"
 
+/obj/item/clothing/mask/gas/silent
+	name = "mask without mouth"
+	desc = "..."
+	icon_state = "silent"
+
 /obj/item/clothing/mask/gas/monkeymask
 	name = "monkey mask"
 	desc = "A mask used when acting as a monkey."
