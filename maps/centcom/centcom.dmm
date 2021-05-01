@@ -3558,6 +3558,11 @@
 /area/shuttle/syndicate/start)
 "alk" = (
 /obj/machinery/light,
+/obj/machinery/nuclearbomb{
+	nuketype = "NT";
+	r_code = "LOLNO"
+	},
+/obj/effect/landmark/droppod,
 /turf/simulated/shuttle/floor{
 	icon_state = "floor6"
 	},
@@ -23324,6 +23329,13 @@
 	name = "plating"
 	},
 /area/custom/wizard_station)
+"nRm" = (
+/turf/simulated/wall,
+/turf/simulated/shuttle/wall{
+	dir = 4;
+	icon_state = "diagonalWall3"
+	},
+/area/shuttle/syndicate/start)
 "nSb" = (
 /obj/structure/table/reinforced,
 /obj/item/robot_parts/head,
@@ -80289,7 +80301,7 @@ ake
 aku
 aku
 aku
-alr
+nRm
 aaM
 aku
 amr
