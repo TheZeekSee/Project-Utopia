@@ -11,8 +11,8 @@
 	restricted_jobs = list("Security Cadet", "Security Officer", "Warden", "Detective", "AI", "Cyborg","Captain", "Head of Personnel", "Head of Security", "Chief Engineer", "Research Director", "Chief Medical Officer", "Internal Affairs Agent")
 	required_players = 4
 	required_players_bundles = 20
-	required_enemies = 2
-	recommended_enemies = 2
+	required_enemies = 1
+	recommended_enemies = 1
 	antag_hud_type = ANTAG_HUD_REV
 	antag_hud_name = "hudheadrevolutionary"
 
@@ -100,11 +100,11 @@
 	var/obj_count = 1
 	add_antag_hud(antag_hud_type, antag_hud_name, rev_mind.current)
 	if (you_are)
-		to_chat(rev_mind.current, "<span class='notice'>You are a member of the revolutionaries' leadership!</span>")
+		to_chat(rev_mind.current, "<span class='notice'>You are a member of silent society!' leadership!</span>")
 	if(!config.objectives_disabled)
 		for(var/datum/objective/objective in rev_mind.objectives)
 			to_chat(rev_mind.current, "<B>Objective #[obj_count]</B>: [objective.explanation_text]")
-			rev_mind.special_role = "Head Revolutionary"
+			rev_mind.special_role = "Head of Silent"
 			obj_count++
 	else
 		to_chat(rev_mind.current, "<font color=blue>Within the rules,</font> try to act as an opposing force to the crew. Further RP and try to make sure other players have fun<i>! If you are confused or at a loss, always adminhelp, and before taking extreme actions, please try to also contact the administration! Think through your actions and make the roleplay immersive! <b>Please remember all rules aside from those without explicit exceptions apply to antagonists.</i></b>")
@@ -177,7 +177,7 @@
 	if((rev_mind in revolutionaries) || (rev_mind in head_revolutionaries))
 		return 0
 	revolutionaries += rev_mind
-	to_chat(rev_mind.current, "<span class='warning'><FONT size = 3> You are now a revolutionary! Help your cause. Do not harm your fellow freedom fighters. You can identify your comrades by the red \"R\" icons, and your leaders by the blue \"R\" icons. Help them kill, capture or convert the heads to win the revolution!</FONT></span>")
+	to_chat(rev_mind.current, "<span class='warning'><FONT size = 3> You are now a member of silent society! Help your cause. Do not harm your fellow freedom fighters. You can identify your comrades by the red \"R\" icons, and your leaders by the blue \"R\" icons. Help them kill, capture or convert the heads to win the revolution!</FONT></span>")
 	rev_mind.special_role = "Revolutionary"
 	add_antag_hud(antag_hud_type, "hudrevolutionary", rev_mind.current)
 	if(config.objectives_disabled)
@@ -198,7 +198,7 @@
 			to_chat(rev_mind.current, "<span class='warning'><FONT size = 3><B>The frame's firmware detects and deletes your neural reprogramming!  You remember nothing from the moment you were flashed until now.</B></FONT></span>")
 
 		else
-			to_chat(rev_mind.current, "<span class='warning'><FONT size = 3><B>You have been brainwashed! You are no longer a revolutionary! Your memory is hazy from the time you were a rebel...the only thing you remember is the name of the one who brainwashed you...</B></FONT></span>")
+			to_chat(rev_mind.current, "<span class='warning'><FONT size = 3><B>You have been brainwashed! You are no longer a member of silent society! Your memory is hazy from the time you were a rebel...the only thing you remember is the name of the one who brainwashed you...</B></FONT></span>")
 
 		for(var/mob/living/M in view(rev_mind.current))
 			if(beingborged)
@@ -212,7 +212,7 @@
 	add_antag_hud(ANTAG_HUD_REV, "hudheadrevolutionary", rev_mind.current)
 	var/obj_count = 1
 	if (you_are)
-		to_chat(rev_mind.current, "<span class='notice'>You are a member of the revolutionaries' leadership!</span>")
+		to_chat(rev_mind.current, "<span class='notice'>You are a member of the silent society's leadership!</span>")
 	if(!config.objectives_disabled)
 		for(var/datum/objective/objective in rev_mind.objectives)
 			to_chat(rev_mind.current, "<B>Objective #[obj_count]</B>: [objective.explanation_text]")

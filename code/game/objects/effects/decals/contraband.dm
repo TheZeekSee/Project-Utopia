@@ -158,6 +158,21 @@
 	name = "ripped poster"
 	desc = "You can't make out anything from the poster's original print. It's ruined."
 
+/obj/structure/sign/poster/silent
+	name = "Silent Society"
+	desc = "This image makes you silent, will you listen to it?"
+	icon_state = "silent_society"
+
+/obj/structure/sign/poster/silent_utopia
+	name = "Down with Utopia"
+	desc = "A poster with the symbol of Utopia crossed out on it, is it a hint of something?"
+	icon_state = "silent_utopia"
+
+/obj/structure/sign/poster/silent_masks
+	name = "Masks of Silence"
+	desc = "Observe the correct attire!"
+	icon_state = "silent_mask"
+
 /obj/structure/sign/poster/random
 	name = "random poster" // could even be ripped
 	icon_state = "random_anything"
