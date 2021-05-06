@@ -43,7 +43,7 @@
 	update()
 
 /obj/item/weapon/implanter/loyalty
-	name = "implanter-insihjt"
+	name = "implanter-insight"
 
 /obj/item/weapon/implanter/loyalty/atom_init()
 	imp = new /obj/item/weapon/implant/mindshield/loyalty(src)
