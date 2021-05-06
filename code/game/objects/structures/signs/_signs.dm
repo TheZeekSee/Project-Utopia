@@ -126,6 +126,11 @@
 	desc = "A sign with the Utopia Logo on it. Glory to Utopia!"
 	icon_state = "utopia"
 
+/obj/structure/sign/remcontrol
+	name = "Remote Control Room"
+	desc = "This is a sign of Remote Control Room"
+	icon_state = "remotecontrol"
+
 /obj/structure/sign/mark
 	layer = TURF_LAYER
 	icon = 'icons/misc/mark.dmi'
